@@ -1,0 +1,4 @@
+Options +FollowSymlinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^aforum.com.br
+RewriteRule (.*) http://www.aforum.com.br/$1 [R=301,L]
