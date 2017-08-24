@@ -48,18 +48,18 @@ module.exports = function(grunt){
       //javascript
       js:{
         files:['dev/js/**/*.js'],
-        tasks:['js']
+        tasks:['devJs']
       },
       //scss
       css:{
         files:['dev/styles/**/*.scss'],
-        tasks:['css']
+        tasks:['devScss']
       },
 
       //php
       php:{
         files:['dev/**/*.php'],
-        tasks:['phpLint']
+        tasks:['devPhp']
       },
 
       //gruntfile
@@ -68,11 +68,7 @@ module.exports = function(grunt){
         tasks:['jshint:grunt']
       },
 
-      //assets
-      assets:{
-        files:['dev/assets/**'],
-        tasks:['assets']
-      }
+
 
     },//final da task watch
 
@@ -223,7 +219,7 @@ module.exports = function(grunt){
   // os arquivos php são verificados, /test é limpa e depois os arquivos .php de
   // dev/ são copiados para /test
   grunt.registerTask("devPhp",[
-    "phplint", // verifica os arquivos
+    // "phplint", // verifica os arquivos
     "clean:test", // limpa o diretório test/
     "copy:devToTest" // copia os arquivos para test/
   ]); // final da tarefa devPhp

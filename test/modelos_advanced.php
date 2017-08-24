@@ -2,34 +2,40 @@
 	// include("init.php");
 	require_once('headerPreto.php');
 
+
 	$modelos = array(
 		//1
-		array("Gabriele C.",6),
+		array("Edgar S.",4),
 		//2
-		array("Laura T.",4), 
+		array("Elizabeth F.",4),
 		//3
-		array("Maria A.",5),
+		array("Flavio R.",2),
 		//4
-		array("Bernardo P.",3),
+		array("Claribel S. ",4),
 		//5
-		array("Matheus O.",4),
+		array("Sandra M. ",3),
 		//6
-		array("Rafaella P.",4),
+		array("Arnaldo C. ",3),
 		//7
-		array("Julia R.",4),
+		array("Valeria C. ",3),
 		//8
-		array("Yuri N.",5),
+		array("Rosalind J. ",4),
 		//9
-		array("André R.",5),
+		array("Marta C. ",3),
 		//10
-		array("Izabella V.",5),
+		array("Mirian M.",2),
 		//11
-		array("Luana C.", 4),
+		array("Maria C.", 3),
 		//12
-		array("Lorenzo E.",4),
+		array("Ivane M.",4),
 		//13
-		array("Danilo C.",4),
-
+		array("Suely M.",2),
+		//14
+		array("Lucia S.",3),
+		//15
+		array("Debora R.",3),
+		//16
+		array("Rosemeri B. ",3)
 	);
 
 ?>
@@ -58,7 +64,7 @@
 		</div>
 	</div>
 
-	<h1 style="margin-top:5%;">Casting Kids</h1>
+	<h1 style="margin-top:5%;">Casting Advanced</h1>
 	<div class="container" style="">
 		<div class="row" style="margin:0px;">
 		<?php
@@ -66,8 +72,8 @@
 			foreach ($modelos as $modelo) {
 			?>
 				<div class="col s6 m4 l3 xl4">
-					<a class="animated casting_link bw" href="#modal" data-photos="<?php echo $modelo[1]?>" data-id="<?php echo $counter?>" data-name="<?php echo $modelo[0]?>" data-category="kids">
-						<img src="img/kids/<?php echo $counter?>.jpg" class="responsive-img" style="max-width:100%; margin-bottom:7.5%;"alt="">
+					<a class="animated casting_link bw" href="#modal" data-photos="<?php echo $modelo[1]?>" data-id="<?php echo $counter?>" data-name="<?php echo $modelo[0]?>" data-category="advanced">
+						<img src="img/advanced/<?php echo $counter?>.jpg" class="responsive-img" style="max-width:100%; margin-bottom:7.5%;"alt="">
 					</a>
 				</div>
 		<?php

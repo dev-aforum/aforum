@@ -2,34 +2,46 @@
 	// include("init.php");
 	require_once('headerPreto.php');
 
+
 	$modelos = array(
 		//1
-		array("Gabriele C.",6),
+		array("Ana L.",3),
 		//2
-		array("Laura T.",4), 
+		array("Claire S.",6),
 		//3
-		array("Maria A.",5),
+		array("Dulce",4),
 		//4
-		array("Bernardo P.",3),
+		array("Emanuely D.",5),
 		//5
-		array("Matheus O.",4),
+		array("Emily M.",12),
 		//6
-		array("Rafaella P.",4),
+		array("Francyne M.",13),
 		//7
-		array("Julia R.",4),
+		array("Gabi A.",5),
 		//8
-		array("Yuri N.",5),
+		array("Gabi S.",5),
 		//9
-		array("André R.",5),
+		array("Gabi T.",3),
 		//10
-		array("Izabella V.",5),
+		array("Gaby V.",12),
 		//11
-		array("Luana C.", 4),
+		array("Isabely Y.", 9),
 		//12
-		array("Lorenzo E.",4),
+		array("Julia G.",11),
 		//13
-		array("Danilo C.",4),
-
+		array("Julia P.",8),
+		//14
+		array("Larissa P.",8),
+		//15
+		array("Laysla L.",3),
+		//16
+		array("Leticia C.",12),
+		//17
+		array("Lilian Z.",14),
+		//18
+		array("Nicole I.",10),
+		//19
+		array("Tharyne Z.",6),
 	);
 
 ?>
@@ -58,7 +70,7 @@
 		</div>
 	</div>
 
-	<h1 style="margin-top:5%;">Casting Kids</h1>
+	<h1 style="margin-top:5%;">Casting Feminino</h1>
 	<div class="container" style="">
 		<div class="row" style="margin:0px;">
 		<?php
@@ -66,8 +78,8 @@
 			foreach ($modelos as $modelo) {
 			?>
 				<div class="col s6 m4 l3 xl4">
-					<a class="animated casting_link bw" href="#modal" data-photos="<?php echo $modelo[1]?>" data-id="<?php echo $counter?>" data-name="<?php echo $modelo[0]?>" data-category="kids">
-						<img src="img/kids/<?php echo $counter?>.jpg" class="responsive-img" style="max-width:100%; margin-bottom:7.5%;"alt="">
+					<a class="animated casting_link bw" href="#modal" data-photos="<?php echo $modelo[1]?>" data-id="<?php echo $counter?>" data-name="<?php echo $modelo[0]?>" data-category="feminino">
+						<img src="img/feminino/<?php echo $counter?>.jpg" class="responsive-img" style="max-width:100%; margin-bottom:7.5%;"alt="">
 					</a>
 				</div>
 		<?php

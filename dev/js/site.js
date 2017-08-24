@@ -3,7 +3,7 @@
 	// xhr.setRequestHeader("Cache-Control", "max-age=0");
 	// xhr.send();
 
-	// 
+	//
 	// var url = $(location).attr("href");
 	// var url = url.split('/');
 	// var name = url.slice(-1).pop();
@@ -11,7 +11,7 @@
 	// 	console.log(value.attr('a'))
 	// 	if ( value.attr('a') == name ){
 	// 		$(this).addClass('ativo');
-	// 	}
+	// 	} 
 	// });
 
 var fadeDuration=2000;
