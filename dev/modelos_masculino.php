@@ -5,18 +5,19 @@
 
 	$modelos = array(
 
-		array("Daniel A.",13),
-		array("Evandro M.",6),
-		array("Fabricio B.",11),
-		array("Jhonatan T.",7),
-		array("Leo P.",12),
-		array("Lucas G.",13),
-		array("Pedro S.",2),
-		array("Ygor N.",3),
-		array("Jessie B.",6),
-		array("André M.",7),
-		array("Guilherme S.",6),
+		array("Daniel A.",13,""),
+		array("Evandro M.",6,""),
+		array("Fabricio B.",11,""),
+		array("Jhonatan T.",7,"Altura: 1,89	| Manequim: 38 | Busto: 91 | Cintura: 44 | Sapato: 41"),
+		array("Leo P.",12, "Altura:1,93	| Manequim:42	| Busto:96 | Cintura: 48	| Sapato: 42"),
+		array("Lucas G.", 13, "Cabelo: Cast. Claro | Olhos: Azuis | Altura: 1,94 | Manequim: 44 | Busto: 98 | Cintura:50 | Quadril:0 | Sapato: 43"),
+		array("Pedro S.",2,""),
+		array("Ygor N.",3,""),
+		array("Jessie B.",6,""),
+		array("André M.",7,""),
+		array("Guilherme S.",6,"Altura: 1,86	| Manequim: 42 | Busto: 95 | Sapato: 42"),
 	);
+
 
 ?>
 

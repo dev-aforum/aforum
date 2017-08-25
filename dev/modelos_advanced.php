@@ -5,37 +5,54 @@
 
 	$modelos = array(
 		//1
-		array("Edgar S.",4),
+		array("Edgar S.",4,	"Cabelo: Branco	| Olhos: Azuis | Altura: 1,85	| Manequim: 40 | Sapato: 43"),
+
 		//2
-		array("Elizabeth F.",4),
+		array("Elizabeth F.", 4 , "Cabelo: Loiro | Olhos: Azuis | Altura: 1,70 | Manequim: 38	| Busto: 88 | Cintura: 65	| Quadril: 90	| Sapato: 38"),
+
 		//3
-		array("Flavio R.",2),
+		array("Flavio R.",2, 	"Cabelo: Grisalho |	Olhos: Castanhos | Altura: 1,76	| Manequim: 42 | Sapato: 41"),
+
 		//4
-		array("Claribel S. ",4),
+		array("Claribel S. ",4, "Cabelo: Loiro | Olhos: Azuis	| Altura: 1,69	| Manequim: 42 | Busto: 98 | Cintura: 82 |	Quadril: 104	| Sapato:38"),
 		//5
-		array("Sandra M. ",3),
+		array("Sandra M. ",3, 	"Cabelo: Castanho | Olhos: Castanhos | Altura: 1,78	| Manequim:  46 |	Sapato: 40"),
+
 		//6
-		array("Arnaldo C. ",3),
+		array("Arnaldo C. ",3, "Cabelo: Castanho Claro | Olhos: Castanhos esverdeado | Altura: 1,82 | Sapato: 42"),
+
 		//7
-		array("Valeria C. ",3),
+		array("Valeria C. ",3, "Cabelo: Loiro | Olhos: Castanhos | Altura: 1,72 | Manequim: 40 | Busto: 91 | Cintura: 77 | Quadril: 105	|Sapato: 39"),
+
 		//8
-		array("Rosalind J. ",4),
+		array("Rosalind J. ",4,"Cabelo: Loiro |	Olhos: Azuis | Altura: 1,50 |	Manequim: 44 | Busto: 83 | Cintura: 69 |	Quadril: 96 | Sapato:35"),
+
 		//9
-		array("Marta C. ",3),
+		array("Marta C. ",3, "Cabelo: Loiro | Olhos: Azuis | Altura: 1,68 |	Manequim: 40 |	Busto: 92 | Cintura: 77 | Quadril: 97 |	Sapato: 40"),
+
 		//10
-		array("Mirian M.",2),
+		array("Mirian M.",2, "Cabelo: Loiro	| Olhos:Azuis | Altura:1,67 | Manequim:38	| Busto:89 Cintura:75 | Quadril:93	| Sapato:36"),
+
 		//11
-		array("Maria C.", 3),
+		array("Maria C.", 3, "Cabelo: Loiro |	Olhos:Azuis |	Altura:1,68 |	Manequim:44 |	Quadril:0 |	Sapato:36"),
+
 		//12
-		array("Ivane M.",4),
+		array("Ivane M.",4, "Cabelo: Loiro |	Olhos:Castanhos | Altura:1,67 |	Manequim:40 |	Busto:59 | Cintura:72 |	Quadril:103 |	Sapato:36"),
+
 		//13
-		array("Suely M.",2),
+		array("Suely M.",2,"Cabelo: Preto |	Olhos:Verdes | Altura:1,52 |	Manequim:40 | Sapato:33"),
+
 		//14
-		array("Lucia S.",3),
+		array("Lucia S.",3, "Cabelo: Grisalho |	Olhos:Azuis | Altura:1,71 |	Manequim:48 |	Busto:109 | Cintura:94 |	Quadril:109 |	Sapato:3"),
+
 		//15
-		array("Debora R.",3),
+		array("Debora R.",3,"Cabelo: Loiro |	Olhos:Verdes | Altura:1,70 |	Manequim:38 |	Busto:84 | Cintura:69 |	Quadril:90 |	Sapato:35"),
+
 		//16
-		array("Rosemeri B. ",3)
+		array("Rosemeri B. ",3,"Cabelo: Grisalho | Olhos:Azuis |	Altura:1,62 |	Manequim:40 |	Busto:0 | Cintura:0 |	Quadril:0 |	Sapato:37"
+)
+
+
 	);
 
 ?>

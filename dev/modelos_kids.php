@@ -3,32 +3,45 @@
 	require_once('headerPreto.php');
 
 	$modelos = array(
+
 		//1
-		array("Gabriele C.",6),
+		array("Gabriele C.",6, "Cabelo: Castanho | Olhos: Castanhos |	Altura: 1,17 |	Manequim: 5 | Sapato: 29"),
+
 		//2
-		array("Laura T.",4), 
+		array("Laura T.",4, "Cabelo: Castanho | Escuro Olhos: Azuis | Altura: 1,21 |	Manequim: 10 |	Busto: 57 | Cintura: 54 |	Quadril: 60 |	Sapato: 30"),
+
 		//3
-		array("Maria A.",5),
+		array("Maria A.",5, "Cabelo: Castanho |  Olhos: Verdes |	Manequim: 8 |	Busto: 67 | Cintura: 56 |	Quadril: 72 |	Sapato: 34"),
+
 		//4
-		array("Bernardo P.",3),
+		array("Bernardo P.",3 , "Cabelo: Loiro | Olhos: Azuis | Altura: 0,62	| Manequim: 6 | Sapato: 15"),
+
 		//5
-		array("Matheus O.",4),
+		array("Matheus O.", 4 , "Cabelo: Loiro |	Olhos: Verdes |	Altura: 1,44 |	Manequim: 12 |	Sapato: 35" ),
+
 		//6
-		array("Rafaella P.",4),
+		array("Rafaella P.",4, 	"Cabelo: Loiro | Olhos: Castanhos esverdeado | Altura: 1,00 |	Manequim: 4 |	Busto:0 | Cintura: 0 |	Quadril: 0 |	Sapato: 25"),
+
 		//7
-		array("Julia R.",4),
+		array("Julia R.",4,		"Cabelo: Loiro |	Olhos: Castanhos | Altura: 1,10	| Manequim: 6	| Sapato: 26"),
+
 		//8
-		array("Yuri N.",5),
+		array("Yuri N.",5, "Cabelo: Loiros	| Olhos: Castanhos | Altura: 1,36	| Manequim: 10	| Sapato: 34"),
+
 		//9
-		array("André R.",5),
+		array("André R.", 5, "Cabelo: Castanho Claro | Olhos: Castanhos | Altura:0,98	| Manequim:4 | Sapato:25"),
+
 		//10
-		array("Izabella V.",5),
+		array("Izabella V.", 5, "Cabelo: Castanho Claro	| Olhos: Azuis | Altura: 1,56	| Manequim: 36	| Busto: 76 | Cintura: 64	| Quadril: 82	| Sapato: 37" ),
+
 		//11
-		array("Luana C.", 4),
+		array("Luana C.", 4, "Cabelo: Loiros	| Olhos: Azuis | Altura: 1,30	| Manequim: 10 | Sapato: 29" ),
+
 		//12
-		array("Lorenzo E.",4),
+		array("Lorenzo E.", 4 , "Cabelo: Loiro | Olhos: Castanhos | Altura: 0,98 | Manequim: 3 | Quadril: 53 | Sapato: 23"),
+
 		//13
-		array("Danilo C.",4),
+		array("Danilo C.", 4, "Cabelo: Castanho | Olhos: Azuis | Altura: 1,26 |	Manequim: 10" ),
 
 	);
 

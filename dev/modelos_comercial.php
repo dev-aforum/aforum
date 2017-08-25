@@ -4,58 +4,82 @@
 
 
 	$modelos = array(
+
 		//1
-		array("Gabiela A.",6),
+		array("Gabiela A.", 6, "Cabelo: Castanho Escuro | Olhos: Castanhos | Altura: 1,72	| Manequim: 36	| Busto: 73 | Cintura: 57	| Quadril: 82	| Sapato: 39"),
 		//2
-		array("Valkiria S.",4),
+		array("Valkiria S.", 4, "Cabelo: Loiro |	Olhos: Verdes | Altura: 1,57 |	Manequim: 38 |	Busto: 87 | Cintura: 69 |	Quadril: 95 |	Sapato: 35"),
+
 		//3
-		array("Marina T.",4),
+		array("Marina T.", 4, "Cabelo: Castanho Claro | Olhos: Castanhos | Altura: 1,80 | 	Manequim: 40 | 	Busto: 84 |  Cintura: 69 | Quadril: 100 | Sapato: 39" ),
+
 		//4
-		array("Michel L.",3),
+		array("Michel L.", 3, "Cabelo: Castanho Escuro | Olhos: Castanhos | Altura: 1,89 | Manequim: 44 | Sapato: 43"),
+
 		//5
-		array("Matheus C.",5),
+		array("Matheus C.", 5, "Cabelo: Loiro |	Cor dos olhos: Verdes | Altura: 0,87 | Manequim: 3"),
+
 		//6
-		array("Sarah L.",5),
+		array("Sarah L.", 5, "Cabelo: Castanho Escuro	| Olhos: Castanhos | Altura: 1,65	| Manequim: 38	| Busto: 84 | Cintura: 67	| Quadril: 92	| Sapato: 38"),
+
 		//7
-		array("Carlos E.",4),
+		array("Carlos E.", 4, "Cabelo: Castanho Olhos: Castanhos Altura: 1,70	Manequim: 38	Sapato: 39"),
+
 		//8
-		array("Ketelyn C.",4),
+		array("Ketelyn C.", 4, "Cabelo: Castanho Claro |	Olhos: Verdes | Altura: 1,56 | Manequim: 36 | Busto: 83 | Cintura: 93	| Quadril: 95	| Sapato: 35"),
 		//9
-		array("Rafael O.",4),
+		array("Rafael O.", 4,	"Cabelo: Castanho Claro	| Cor dos olhos: Castanhos | Altura:1,79	| Manequim:38 | Quadril:77	| Sapato:41"),
+
 		//10
-		array("Alexia G.",4),
+		array("Alexia G.", 4, "Cabelo: Castanhos Escuro |	Olhos:Castanhos | Altura:1,63 |	Manequim:38 |	Sapato:36"),
+
 		//11
-		array("Daiara C.",3),
+		array("Daiara C.", 3, "Cabelo: Preto	| Olhos: Castanhos | Altura:1,62	Manequim:36	| Busto:84 | Cintura:65	| Quadril:92 |Sapato:35"),
+
 		//12
-		array("Gilton C.",5),
+		array("Gilton C.", 5, "Cabelo: Castanho Escuro | Olhos: Verdes | Altura: 1,84	| Manequim: 42	| Sapato: 42"),
+
 		//13
-		array("Gabriela C.",5),
+		array("Gabriela C.", 5, "Cabelo: Ruivo |	Olhos: Castanhos | Altura: 1,73 |	Manequim: 36 |	Busto: 86 | Cintura: 60 |	Quadril: 87 |	Sapato: 37"),
+
 		//14
-		array("Marcos P.",4),
+		array("Marcos P.", 4, "Cabelo: Castanho Escuro | Olhos: Castanhos | Altura: 1,81 |	Manequim: 38 | Sapato: 41"),
+
 		//15
-		array("Emmanoel S.",5),
+		array("Emmanoel S.", 5, "Cabelo: Castanhos Claro |	Olhos: Castanhos esverdeados | Altura: 1,85 |	Manequim: 38 | Sapato: 44"),
+
 		//16
-		array("Ana L.",5),
+		array("Ana L.", 5, "Cor do cabelo: Pretos |	Cor dos olhos :Castanhos | Altura: 1,56 |	Sapato: 34" ),
+
 		//17
-		array("Gelca R.",3),
+		array("Gelca R.", 3, "Cabelo: Loiro |	Olhos: Castanho esverdeado | Altura: 1,70 |	Manequim: 38 |	Busto: 92 | Cintura: 68 |	Quadril: 97 |	Sapato: 36"),
+
 		//18
-		array("Diego L.",3),
+		array("Diego L.", 3, "Cabelo: Loiro	| Olhos: Verdes | Altura: 1,85	| Manequim: 38 | Sapato: 43"),
 		//19
-		array("Felipe B.",5),
+		array("Felipe B.", 5, "Cabelo: Castanho Escuro | Olhos: Castanhos | Altura: 1,77 | Manequim: 38 | Sapato:42"),
+
 		//20
-		array("Carlos E.",4),
+		array("Carlos E.", 4, "Cabelo: Castanhos Claro |	Olhos: Castanhos | Altura: 1,72 |	Manequim: 38 | Sapato: 39"),
+
 		//21
 		array("Gabi A.",5),
+
 		//22
-		array("Gabi R.",5),
+		array("Gabi R.",5, "Cabelo: Ruivo |	Olhos:Castanhos | Altura:1,73 |	Manequim:36 |	Busto:86 | Cintura:60 |	Quadril:87 | Sapato:37"),
+
 		//23
-		array("Julia B.",10),
+		array("Julia B.",10, "Cabelo: Loiro	| Olhos: Azuis | Altura: 1,74	| Manequim: 38	| Busto: 87 | Cintura: 69	| Quadril: 101	| Sapato: 37"),
+
 		//24
-		array("Maria B.",5),
+		array("Maria B.", 5, "Cabelo: Castanho Escuro | Olhos: Castanhos | Altura: 1,79	| Manequim: 40 |	Busto: 85 | Cintura: 70	| Quadril: 99 |	Sapato: 40"),
+
 		//25
-		array("Fabricio B.",3),
+		array("Rafaela V.", 4, "Cor do cabelo: Castanhos Escuro |	Olhos: Castanhos | Altura: 1,63	| Manequim: 36	| Busto: 75 | Cintura: 58	| Quadril: 86	| Sapato: 37" ),
+
 		//26
-		array("Rafaela V.",4)
+		array("Renata G.", 3, "Cabelo: Loiros |	Olhos: Verdes | Altura:1,76 |	Manequim:38	 | Sapato:37" )
+
 	);
 
 ?>
