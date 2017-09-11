@@ -43,7 +43,7 @@
     		array("Maria C.", 3, "Cabelo: Loiro |	Olhos:Azuis |	Altura:1,68 |	Manequim:44 |	Quadril:0 |	Sapato:36"),
 
     		//12
-    		array("Ivane M.",4, "Cabelo: Loiro |	Olhos:Castanhos | Altura:1,67 |	Manequim:40 |	Busto:59 | Cintura:72 |	Quadril:103 |	Sapato:36"),
+    		array("Monica T.",5, "Cabelo: Loiros	| Olhos: Castanhos | Altura: 1,75 | Manequim: 38 | Busto: 86 | Cintura: 58 | Quadril: 91 | Sapato: 37"),
 
     		//13
     		array("Suely M.",2,"Cabelo: Preto |	Olhos:Verdes | Altura:1,52 |	Manequim:40 | Sapato:33"),
@@ -52,7 +52,7 @@
     		array("Lucia S.",3, "Cabelo: Grisalho |	Olhos:Azuis | Altura:1,71 |	Manequim:48 |	Busto:109 | Cintura:94 |	Quadril:109 |	Sapato:3"),
 
     		//15
-    		array("Debora R.",3,"Cabelo: Loiro |	Olhos:Verdes | Altura:1,70 |	Manequim:38 |	Busto:84 | Cintura:69 |	Quadril:90 |	Sapato:35"),
+    		array("Divangela M.",4,"Cabelo: Castanhos Escuro | Olhos: Castanhos | Altura: 1,69 | Manequim: 36 | Busto: 80 | Cintura: 60 | Quadril: 88 | Sapato: 38"),
 
     		//16
     		array("Rosemeri B. ",3,"Cabelo: Grisalho | Olhos:Azuis |	Altura:1,62 |	Manequim:40 |	Busto:0 | Cintura:0 |	Quadril:0 |	Sapato:37")
