@@ -6,7 +6,7 @@ $(document).ready(function() {
     },
     complete:function(modal){
       $(".modal-close").addClass("hide");
-      $(modal).remove();
+      $(".modal-content").remove();
       $(".modal-overlay").remove();
     }
   });

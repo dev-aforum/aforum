@@ -39,7 +39,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <!-- folha de estilo compilada -->
   <link rel="stylesheet" href="style.css">
-
+  
+  <noscript>
+    Infelizment esse site não é suportado pelo seu navegador. Para acessar o site da Forum por favor faça o download de um navegador mais moderno.
+    O navegador com melhor funcionamento para esse site é o Google Chrome.
+  </noscript>
 
   <!-- assets -->
 
