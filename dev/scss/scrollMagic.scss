@@ -1,0 +1,89 @@
+// cada foto
+.casting-gallery-item{
+
+  // delay progressivo de imagens para telas grandes
+  @media screen and (min-width: 1200px){
+
+    &:nth-child(3n+1){
+      animation-delay: 0.25s ;
+    }
+
+    &:nth-child(3n+2){
+      animation-delay: 0.5s;
+    }
+
+    &:nth-child(3n+0){
+      animation-delay: 0.75s;
+    }
+
+    &:nth-child(3){
+      animation-delay: 0.083s!important ;
+    }
+
+    &:nth-child(2){
+      animation-delay: 0.027s!important;
+    }
+
+    &:nth-child(1){
+      animation-delay: 0.009s!important;
+    }
+
+  }
+
+  // delay progressivo de imagens para telas pequenas
+  @media screen and (max-width: 600px){
+    &:nth-child(odd){
+      animation-delay: 0.25s!important;
+    }
+    &:nth-child(even){
+      animation-delay: 0.5s!important;
+    }
+  }
+}
+
+// cada foto
+.yt-container{
+
+  // delay progressivo de imagens para telas grandes
+  @media screen and (min-width: 1200px){
+
+    &:nth-child(3n+1){
+      animation-delay: 0.25s ;
+    }
+
+    &:nth-child(3n+2){
+      animation-delay: 0.5s;
+    }
+
+    &:nth-child(3n+0){
+      animation-delay: 0.75s;
+    }
+
+    &:nth-child(3n+4){
+      animation-delay: 0.75s;
+    }
+
+    &:nth-child(3){
+      animation-delay: 0.083s!important ;
+    }
+
+    &:nth-child(2){
+      animation-delay: 0.027s!important;
+    }
+
+    &:nth-child(1){
+      animation-delay: 0.009s!important;
+    }
+
+
+
+  }
+
+  // delay progressivo de imagens para telas pequenas
+  @media screen and (max-width: 600px){
+    &:nth-child(odd){
+      animation-delay: 0.5s;
+    }
+
+  }
+}

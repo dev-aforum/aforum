@@ -1,253 +1,273 @@
-<?php require_once('headerPreto.php') ?>
-<meta http-equiv="cache-control" content="max-age=0" />
-</head>
-<body>
+<!-- importamos o header  -->
+<?php require_once("header.php") ?>
+<div class="container hide">
 
-  <!-- counteúdo da página -->
-  <div class="container">
-
+    <h1 class="title">Seja Forum</h1>
     <!-- formulário de inscrição -->
-    <form class="form" id="form_inscription" action="mailer-sejaforum.php" method="post"  enctype="multipart/form-data">
+    <form class="form" id="form_inscription" action="" method="post"  enctype="multipart/form-data">
+      <img class="responsive-img" style="margin:2% 0%;"src="img/header_form.jpg" alt="Modelo Forum">
 
-    <!-- facebook track -->
-    <script>
-      fbq('track', 'Lead', {
-      value: 10.00,
-      currency: 'USD'
-      });
-    </script>
-
-
-      <!-- form header  -->
-      <div class="form_header" id="form_inscription_header">
-
-        <button  id="form_inscription_header_button">Inscreva-se</button>
-      </div>
+      <h2 class="subtitle4 flow-text">Quer fazer parte da maior agência de modelos do Sul do Brasil? Inscreva-se!</h2>
 
       <!-- envio de imagens -->
       <fieldset id="form_upload">
-        <h2 class="form_title">Seja Forum</h2><br/>
-        <h3 class="form_subTitle">Quer fazer parte da maior agência de modelos do Sul do Brasil? Inscreva-se!</h3><br/>
-        <h2 class="form_fieldsetTitle">Fotos</h2>
-      <p>Primeiro, adcione duas fotos suas, uma de rosto e outra de corpo</p><br/>
+
+      <h2 class="subtitle2">Fotos</h2>
+      <p class="flow-text">Primeiro, adicione duas fotos suas, uma de rosto e outra de corpo.</p>
 
       <div class="form_upload_img_imagePreviewContainer">
-        <label  class="form_fakeButton form_upload_img_label" for="form_inscription_imgup1" id="form_upload_button_fakeButton1">Adcionar foto de rosto</label>
-        <input data-validation="required" class="form_upload" type="file" name="photo_1" id="form_inscription_imgup1" alt="Foto de corpo">
+        <label  class="form_fakeButton form_upload_img_label" for="form_inscription_imgup1" id="form_upload_button_fakeButton1">Adcionar foto de rosto*</label>
+        <input class="form_upload" type="file" name="photo_1" id="form_inscription_imgup1" alt="Foto de corpo">
         <div class="form_upload_img_imagePreview" id="form_inscription_imgPreview1"></div>
       </div>
 
       <div class="form_upload_img_imagePreviewContainer">
         <label class="form_upload_img_label form_fakeButton" for="form_inscription_imgup2" id="form_upload_button_fakeButton2">Adcionar foto de corpo</label>
-        <input class="form_upload" type="file" name="photo_2" id="form_inscription_imgup2" alt="Foto de corpo">
+        <input data-validation="required" class="form_upload" type="file" name="photo_2" id="form_inscription_imgup2" alt="Foto de corpo">
         <div class="form_upload_img_imagePreview" id="form_inscription_imgPreview2"></div>
       </div>
 
-        <!-- <div class="form_inscription_imgup_displayArea">
-        </div> -->
 
       </fieldset> <!-- final do fieldset de envio de imagens -->
 
       <!-- informações de contato -->
-      <fieldset class="form_field" id="form_inscription_field">
-        <h2 class="form_fieldsetTitle">Dados</h2>
-        <p>Agora precisamos de alguns dados pessoais</p>
-        <input type="text" name="user_name" placeholder="Nome completo*">
-        <input type="email" name="email" id="form_inscription_email" placeholder="Email*">
-        <input type="text" name="telephone" id="form_inscription_telephone" placeholder="Telefone com DDD">
-        <input  type="text" name="celphone" id="form_inscription_celphone" placeholder="Celular com DDD*" >
-        <select name="state"  id="form_inscription_state" class="select2">
-          <option value="" selected>Estado</option>
-          <option value="Acre"> Acre </option>
-          <option value="Alagoas"> Alagoas </option>
-          <option value="Amapá"> Amapá	</option>
-          <option value="Amazonas"> Amazonas	</option>
-          <option value="Bahia"> Bahia	</option>
-          <option value="Ceará"> Ceará	</option>
-          <option value="DF"> Distrito Federal </option>
-          <option value="Espírito Santo"> Espírito Santo	</option>
-          <option value="Goiás"> Goiás	</option>
-          <option value="Maranhão"> Maranhão	</option>
-          <option value="Mato Grosso"> Mato Grosso	</option>
-          <option value="Mato Grosso do Sul"> Mato Grosso do Sul	</option>
-          <option value="Minas Gerais"> Minas Gerais	</option>
-          <option value="Pará"> Pará	</option>
-          <option value="Paraíba"> Paraíba	</option>
-          <option value="Paraná"> Paraná	</option>
-          <option value="Pernambuco"> Pernambuco	</option>
-          <option value="Piauí"> Piauí	</option>
-          <option value"Rio de Janeiro"> Rio de Janeiro </option>
-          <option value="Rio Grande do Norte"> Rio Grande do Norte	</option>
-          <option value="Rio Grande do Sul"> Rio Grande do Sul </option>
-          <option value="Rondônia"> Rondônia	</option>
-          <option value="Roraima"> Roraima	</option>
-          <option value="Santa Catarina"> Santa Catarina	</option>
-          <option value="São Paulo"> São Paulo	</option>
-          <option value="Sergipe"> Sergipe	</option>
-          <option value="Tocatins"> Tocantins  </option>
-        </select>
-        <input type="text" name="city" placeholder="Cidade">
-        <input type="text" name="adress"  placeholder="Endereço">
-        <select id="form_inscription_age" name="age" placeholder="Idade" >
+      <fieldset class="row">
+
+        <h2 class="subtitle2">Dados pessoais</h2>
+        <p class="flow-text">Agora precisamos de alguns dados pessoais, conte-nos quem é você.</p>
+
+        <!-- name -->
+        <div class="input-field col s12">
+
+          <input class="" id="user_name" type="text" name="user_name">
+          <label for="user_name">Nome*</label>
+        </div>
+
+        <!-- email -->
+        <div class="input-field col s12">
+          <input class="" id="email" type="email" name="email">
+          <label for="email">Email*</label>
+        </div>
+
+        <!-- celphone -->
+        <div class="input-field col s12 m12 l6 xl4">
+          <input class="" id="celphone" type="text" name="celphone">
+          <label for="celphone">Celular (com DDD)* </label>
+        </div>
+
+        <!-- phone -->
+        <div class="input-field col s12 m12 l6 xl4">
+          <input class="" id="telephone" type="text" name="telephone">
+          <label for="telephone">Telefone (com DDD)*</label>
+        </div>
+
+
+        <!-- hack: temos dois inputs abaixo, um com o date picker e um com o valor
+         calculado da idade. O da idade está embaixo do primeiro com o texto da cor do fundo,
+         Parece um input só, mas não é. Cuidado ao mudar esses estilos em linha
+       -->
+
+        <!-- age -->
+        <div class="input-field col s12 m12 l6 xl4">
+          <input class="datepicker" id="birth" type="text" style="" name="birth">
+          <label for="birth">Data de nascimento*</label>
+        </div>
+        <input type="hidden" name="age" value="">
+
+
+
+
+        <!-- <select id="form_inscription_age" name="age" placeholder="Idade" >
           <option selected>Idade</option>
-        </select>
-        <input type="text" name="ID" placeholder="RG"/>
-        <input type="text" class="form_inscription_tutorData" name="tutorName"placeholder="Nome responsável">
-        <input type="text" class="form_inscription_tutorData" name="tutorId" placeholder="RG responsável">
-      </fieldset> <!-- final do fieldset de informações de contato -->
+          <opttion>1</opttion>
+        </select> -->
+
+        <!-- rg -->
+        <!-- <div class="input-field col s12">
+          <input id="rg" type="number" name="rg">
+          <label for="rg">RG</label>
+        </div> -->
+
+        <!-- tutorName -->
+        <div class="input-field hide col s12 m12 l6 xl6" id="tutorName-field">
+
+          <input class="validate" id="tutorName" type="text" name="tutorName">
+          <label for="tutorName">Nome do responsável*</label>
+        </div>
+
+        <!-- tutorRg -->
+        <!-- <div class="input-field hide col s12 m12 l6 xl6" id="tutorRg-field">
+
+          <input id="tutorRg" type="number" name="tutorRg">
+          <label for="tutorRg">RG do responsável</label>
+        </div> -->
+
+      </fieldset>
+
+      <!-- <fieldset class="row">
+        <h2>Endereço</h2>
+        <p class="flow-text">Agora seu endereço. É só incluir o CEP que a gente faz o resto.</p> -->
+        <!-- CEP -->
+        <!-- <div class="input-field col s12 m4 l4 xl4">
+
+          <input  id="cep" type="tel" name="cep">
+          <label for="cep">CEP</label>
+        </div> -->
+
+        <!-- Street -->
+        <!-- <div class="input-field col s12 m4 l8 xl4">
+          <input disabled  id="street" type="text" name="street">
+          <label for="street">Rua</label>
+        </div> -->
+
+        <!-- Hood -->
+        <!-- <div class="input-field col s12 m4 l6 xl4">
+          <input disabled  id="hood" type="text" name="hood">
+          <label for="hood">Bairro</label>
+        </div> -->
+
+        <!-- City -->
+        <!-- <div class="input-field col s12 m4 l6 xl4">
+          <input disabled  id="city" type="text" name="city">
+          <label for="city">Cidade</label>
+        </div> -->
+
+        <!-- State -->
+        <!-- <div class="input-field col s12 m4 l6 xl4">
+          <input disabled  id="state" type="text" name="street">
+          <label for="street">Estado</label>
+        </div> -->
+
+        <!-- Number -->
+        <!-- <div class="input-field col s12 m4 l6 xl4">
+          <input id="number" type="number" name="number">
+          <label for="number">Número</label>
+        </div> -->
+
+      </fieldset><!-- end of adress fieldset-->
 
       <!-- fieldset de medidas -->
-      <fieldset>
-        <h2 class="form_fieldsetTitle">Medidas</h2>
-        <p>Para finalizar sua inscrição, insira suas medidas</p>
-        <select name="gender" class="" id="form_inscription_gender">
-          <option selected>Gênero</option>
-          <option value="form_inscription_masc_hidden" class="form_inscription_masc_hidden">Masculino</option>
-          <option value="form_inscription_fem_hidden" class="form_inscription_fem_hidden" >Feminino</option>
-          <option value="form_inscription_trans_hidden" class="form_inscription_trans_hidden" >Transgênero</option>
-        </select>
+      <fieldset class="row">
+        <h2>Medidas</h2>
+        <p class="flow-text">Para terminar sua inscrição, precisamos saber quais são suas medidas. Selecione seu gênero para começar.</p>
+
+
+        <div class="input-field col s12">
+          <select name="gender" class="validate" id="form_inscription_gender">
+            <option selected value="genero">Gênero*</option>
+            <option value="form_inscription_masc_hidden" class="form_inscription_masc_hidden black-text">Masculino</option>
+            <option value="form_inscription_fem_hidden" class="form_inscription_fem_hidden black-text" >Feminino</option>
+            <option value="form_inscription_trans_hidden" class="form_inscription_trans_hidden black-text">Transgênero</option>
+          </select>
+        </div>
+
+        <!-- <input type="hidden" name="gender" value="f"> -->
+
+        <!-- <input type="text" name="gender" style="display:none;" value="m">  -->
+
+
+        <!-- height -->
+        <div class="input-field col s12">
+          <input type="text" id="height" name="height">
+          <label for="height">Altura</label>
+        </div>
+
+        <!-- manequim -->
+        <div class="input-field col s12">
+          <input type="text" id="manequim" name="manequim">
+          <label for="manequim">Número do manequim</label>
+        </div>
+
+        <div class="input-field col s12">
+          <input type="text" id="shoe" name ="shoe">
+          <label for="shoe">Sapato</label>
+        </div>
+
+        <!-- eyes -->
+        <div class="input-field col s12">
+          <input id="eyeColor"type="text" name="eyeColor">
+          <label for="eyeColor">Cor dos olhos</label>
+        </div>
+
+        <!-- hair -->
+        <div class="input-field col s12">
+          <input type="text" id="hair" name="hair">
+          <label for="hair">Cor do cabelo</label>
+        </div>
 
         <!-- opções Masculino -->
-      	<div class="form_hiddenField" id="form_inscription_masc_hidden">
-          <input type="text" name="height" placeholder="Altura" >
-          <input type="text" name="torax" placeholder="Tórax" >
-          <input type="text" name="manequim" placeholder="Número do manequim">
-          <input type="text" name="suit" placeholder="Terno" >
-          <input type="text" name="shirt" placeholder="Camisa">
-          <input type="text" name ="shoe" placeholder="Sapato">
-          <input type="text" name="eyeColor" placeholder="Cor dos olhos" >
-          <input type="text" name="hair" placeholder="Cor do cabelo" >
-      	</div> <!-- final do fieldset de opções masculino -->
+        <div class="form_hiddenField hide" id="form_inscription_masc_hidden">
+          <div class="input-field col s12">
+            <input  type="text" id="torax" name="torax">
+            <label for="torax">Torax</label>
+          </div>
+          <div class="input-field col s12">
+            <input type="text" id="suit" name="suit">
+            <label for="suit">Terno</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="shirt" type="text" name="shirt">
+            <label for="shirt">Camisa</label>
+          </div>
+        </div> <!-- final do fieldset de opções masculino -->
 
         <!-- opções feminino -->
-      	<div class="form_hiddenField" id="form_inscription_fem_hidden">
-          <input type="text" name="height" placeholder="Altura" >
-          <input type="text" name="bust" placeholder="Busto">
-          <input type="text" name="manequim" placeholder="Número do manequim">
-          <input type="text" name="waist" placeholder="Cintura" >
-          <input type="text" name="hips" placeholder="Quadril">
-          <input type="text" name="shoe" placeholder="Sapato">
-          <input type="text" name="eyeColor" placeholder="Cor dos olhos">
-          <input type="text" name="hair" placeholder="Cor do cabelo" >
-      	</div><!-- final de opções feminino -->
+        <div class="form_hiddenField hide" id="form_inscription_fem_hidden">
 
-        <!-- opções transgênero -->
-        <div class="form_hiddenField" id="form_inscription_trans_hidden">
-          <input type="text" name="height" placeholder="Altura" >
-          <input type="text" name="bust" placeholder="Busto/Toráx">
-          <input type="text" name="manequim" placeholder="Número do manequim">
-          <input type="text" name="waist" placeholder="Cintura/Terno" >
-          <input type="text" name="hips" placeholder="Quadril">
-          <input type="text" name="shoe" placeholder="Sapato">
-          <input type="text" name="eyeColor" placeholder="Cor dos olhos">
-          <input type="text" name="hair" placeholder="Cor do cabelo" >
+          <!-- bust -->
+          <div class="input-field col s12">
+            <input id="bust" type="text" name="bust">
+            <label for="bust">Busto</label>
+          </div>
+
+          <!-- waist -->
+          <div class="input-field col s12">
+            <input id="waist" type="text" name="waist">
+            <label for="waist">Cintura</label>
+          </div>
+
+          <!-- hips -->
+          <div class="input-field col s12">
+            <input id="hips" type="text" name="hips">
+            <label for="hips">Quadril</label>
+          </div>
+
         </div><!-- final de opções feminino -->
 
+        <!-- opções transgênero -->
+        <div class="form_hiddenField hide" id="form_inscription_trans_hidden">
 
+          <!-- bust/torax -->
+          <div class="input-field col s12">
+            <input id="bust" type="text" name="bust">
+            <label for="bust">Busto/Toráx</label>
+          </div>
+
+          <!-- waist/suit -->
+          <div class="input-field col s12">
+            <input id="waist" type="text" name="waist">
+            <label for="waist">Cintura/Terno</label>
+          </div>
+
+          <!-- hips -->
+          <div class="input-field col s12">
+            <input id="hips" type="text" name="hips">
+            <label for="hips">Quadril</label>
+          </div>
+        </div><!-- final de opções feminino -->
       </fieldset> <!-- final do fieldset de medidas -->
 
       <input type="hidden" id="indicacao" name="indicacao" value="8"/>
       <input type="hidden" id="numero_unidade" name="numero_unidade" value="1"/>
 
-    <button id="submit-btn" name="button">
-      Enviar
-    </button>
+      <button type="submit" class="btn grey darken-4 waves-effect waves-light" id="sejaForumSubmit" style="margin-bottom:5%;">Enviar<i class="material-icons right">send</i></button>
+
+    </form>  <!-- final do formulário de inscrição -->
 
 
-  </form>  <!-- final do formulário de inscrição -->
+
 
 </div> <!-- final da div de conteúdo-->
-<script type="text/javascript">
-
-
-
-$("#form_inscription").validate({
-
-  rules:{
-    user_name: "required",
-    email: "required",
-    celphone:"required",
-    telephone: "required",
-    age: "required",
-  },
-  messages:{
-    user_name: "Precisamos saber seu nome para concluir o cadastro",
-    email: "O email é obrigatório para o cadastro",
-    celphone:"O número de telefone celular com DDD é obrigatório para o cadastro",
-    telephone:"O número de telefone com DDD é obrigatório para o cadastro",
-    age:"Selecionar sua idade é obrigatório para o cadastro",
-  },
-  submitHandler: function(form) {
-    //se o cookie de nome ainda não estiver definido
-    if ( Cookies.get("name") === undefined ) {
-
-      Cookies.set( "name" , $("[name='user_name']").val() );
-
-
-      var data = new FormData($("#form_inscription")[0]);
-      var url = 'https://intranet.aforum.com.br/cadastroScouterSeletiva/';
-
-      $.ajax({
-          type: "POST",
-          url: url,
-          processData: false,
-          contentType: false,
-          data: data,
-          async: false,
-          dataType: 'json',
-          success: function (data) {
-            console.log(data);
-            form.submit();
-            console.log("cadastro efetuado");
-          },
-          error: function(){
-            alert("Ocorreu um erro, tente novamente mais tarde");
-          }
-        });
-
-        form.submit();
-
-    } else {
-
-      if( Cookies.get("name") === $("[name='user_name']").val() ){
-
-        alert("O cadastro de " + $("[name='user_name']").val() + " já foi realizado" );
-
-      } else {
-
-        Cookies.set( "name" , $("[name='user_name']").val() );
-
-        var data = new FormData($("#form_inscription")[0]);
-
-        var url = 'https://intranet.aforum.com.br/cadastroScouterSeletiva/';
-
-        $.ajax({
-            type: "POST",
-            url: url,
-            processData: false,
-            contentType: false,
-            data: data,
-            async: false,
-            dataType: 'json',
-            success: function (data) {
-              console.log(data);
-              form.submit();
-              console.log("cadastro efetuado");
-            },
-            error: function(){
-              alert("Ocorreu um erro, tente novamente mais tarde");
-            }
-          });
-
-
-        form.submit();
-      }
-    }
-  }
-});
-
-
-
-</script>
-
-<?php require_once('footer.php') ?>
+</div>
+<!-- importamos o footer -->
+<?php require_once("footer.php") ?>

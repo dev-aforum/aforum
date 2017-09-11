@@ -1,26 +1,59 @@
-<?php include('headerBranco.php') ?>
+<?php include('header.php') ?>
 
 
-	<div class="clear"></div>
+      <!-- MODAL -->
 
-	<div id="background">
-		<ul id="slider">
-			<li><img src="img/slider/slider11.png" alt="Modelo Editorial Casting Forum Model Curitiba" class="img_slider" /></li>
-			<li><img src="img/slider/slider2.jpg" alt="Modelo Comercial Casting Forum Model Curitiba" class="img_slider" /></li>
-			<li><img src="img/slider/slider3.png" alt="Modelo Comercial Casting Forum Model Curitiba" class="img_slider" /></li>
-			<li><img src="img/slider/slider12.png" alt="Modelo Comercial Casting Forum Model Curitiba" class="img_slider" /></li>
-			<li><img src="img/slider/slider6.png" alt="Modelo Comercial Casting Forum Model Curitiba" class="img_slider" /></li>
-			<li><img src="img/slider/slider7.png" alt="Modelo Comercial Casting Forum Model Curitiba" class="img_slider" /></li>
-			<li><img src="img/slider/slider9-2.png" alt="Modelo Comercial Casting Forum Model Curitiba" class="img_slider" /></li>
-			<li><img src="img/slider/slider10.png" alt="Modelo Comercial Casting Forum Model Curitiba" class="img_slider" /></li>
-			<li><img src="img/slider/slider11.png" alt="Modelo Comercial Casting Forum Model Curitiba" class="img_slider" /></li>
-			<li><img src="img/slider/slider2-n.jpg" alt="Modelo Comercial Casting Forum Model Curitiba" class="img_slider" /></li>
-			<li><img src="img/slider/slider9.jpg" alt="Modelo Editorial Casting Forum Model Curitiba" class="img_slider" /></li>
-		</ul>
-		<div class="clear"></div>
-	</div>
-	<div id="over"></div>
-	<video src="img/dirt.mp4" preload="true" autoplay="true" loop="true" class="canvas-draw__video"></video>
-	<div class="clear"></div>
+      <!-- if the user has seen the modal in this session we don't show it again -->
+
+      <!-- if modal variable is not set -->
+      <?php if($_SESSION["modal"]=== true) {?>
+
+      <!-- show the modal -->
+
+      <!-- Modal Trigger -->
+      <a class="waves-effect waves-light btn modal-trigger" style="display:none" href="#modal-indexPopUp">Modal</a>
+			<!-- botão de fechar a modal -->
+			<i class="material-icons large modal-close" style="">close</i>
+      <!-- modal -->
+      <div id="modal-indexPopUp" class="modal" style="">
+        <div class="modal-content"  id="content-video">
+          <div class="opiniao_slider_item">
+            <div class="youtube" id="popup" data-embed="M2YufTXQz9M">
+              <div class="play-button"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- set modal variable -->
+      <?php $_SESSION["modal"] = false; ?>
+
+      <?php } ?> <!-- end if -->
+
+<!-- background slider -->
+<div class="slider-block">
+
+</div>
+<div class="slider fullscreen" id="slider-index">
+	<ul class="slides">
+
+<li class="slider1" alt="" ></li>
+<li class="slider2" alt="" ></li>
+<li class="slider3" alt="" ></li>
+<li class="slider4" alt="" ></li>
+<li class="slider5" alt="" ></li>
+<li class="slider6" alt="" ></li>
+<li class="slider7" alt="" ></li>
+<li class="slider8" alt="" ></li>
+<li class="slider9" alt="" ></li>
+
+	</ul>
+</div>
+
+
+<video autoplay loop id="slider-index-video-background" muted plays-inline>
+	<source src="img/dirt.mp4" type="video/mp4">
+</video>
+
 
 	<?php require_once('footer.php') ?>

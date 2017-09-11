@@ -1,6 +1,73 @@
 /**********************************************
 FORMS & UI
 **********************************************/
+/* getAge
+ * PURPOSE : get a the age of a given date
+ *  PARAMS : date, interger
+ * RETURNS : age in interger
+ *   NOTES :
+ */
+
+function getAge(birthDate){
+  // console.log("***funciton getAge***");
+  //get timestamp of user birth date
+  var birthYear = new Date(birthDate).getFullYear(); // console.log("birh date is " + birthYear);
+  var birthMonth = new Date(birthDate).getMonth()+1; // console.log("birth month is " + birthMonth);
+  //gettimestamp of now
+  var year = new Date().getFullYear(); // console.log("today is " + year);//get the date of today
+  var month = new Date().getMonth()+1; // console.log("today's month is " + month );
+  //get timestamp age
+  var ageYears = Math.abs(year-birthYear);
+  var ageMonth = month-birthMonth;
+
+  if ( ageMonth <= 0) {
+    ageYears--;
+  }
+
+  // console.log("user's age is " + ageYears); //subtract birth age from today
+
+  // console.log("***funciton getAge***");
+  return ageYears;
+
+}
+
+/* isMinor
+ * PURPOSE : Autogenerates function contract comments
+ *  PARAMS : date, interger
+ * RETURNS :  true if minor, false if not-
+ *   NOTES :
+ */
+
+function isMinor(birthDate,countryMinorAge){
+  // console.log("***funciton isMinor***");
+  //get timestamp of user birth date
+  var birth = new Date(birthDate); // console.log("birh date is " + birth);
+  birth = birth.getTime(); // console.log("birh date timestamp is " + birth);
+
+  //get timestamp of minor age
+  // console.log("minor age in country is " + countryMinorAge);
+  var minorAge = countryMinorAge*31556926000; //// console.log("minor age timestamp is " + minorAge); //mutiply the minor age by 1 year in timestamp
+
+  //gettimestamp of now
+  var date = new Date(); // console.log("today is " + date);//get the date of today
+  date = Math.round(date.getTime()); // console.log("today's timestamp is " + date); //get today's timestamp
+
+
+  //get timestamp age
+  var age = Math.abs(date-birth);
+
+  // console.log("user's age is " + age); //subtract birth age from today
+
+  //check if user is minor in the country
+  if(age>minorAge){
+    // console.log("user is not minor");
+    return false;
+  }else{
+    // console.log("user is minor");
+    return true;
+  }
+// console.log("***funciton isMinor***");
+}
 
 /* lookInputNumberAndChange
  * PURPOSE : Trigger a input and compares the input number with a condition to show or not a html object
@@ -48,9 +115,9 @@ function showOnClick(buttonId, toShowId){
  */
 
 function formSelectChange (formselect, hidden){
-  console.log("formSelectChange");
-  console.log("formselect: " + formselect);
-  console.log("hidden: " + hidden);
+  //// console.log("formSelectChange");
+  //// console.log("formselect: " + formselect);
+  //// console.log("hidden: " + hidden);
 
   $(formselect).change(function(){ // if object changes
 
@@ -60,11 +127,11 @@ function formSelectChange (formselect, hidden){
     // for each of the hidden elements
     $.each(hidden, function(index,value){
       // if its equal to the seleted value show, if its not hid
-      console.log('value: ' + value);
+      //// console.log('value: ' + value);
       if (selected == value){
-        $("#" + value).show();
+        $("#" + value).removeClass('hide');
       } else {
-        $("#" + value).hide();
+        $("#" + value).addClass('hide');
       }//end of if else
     });//end of each
   });//end of trigger
@@ -85,7 +152,7 @@ function imagePreview (inputsClass,displayArea){
     var fileType = $(this).prop('files')[0].type;//get filetype of upload object
 
     var file = $(this).prop('files')[0];//get the files
-    console.log(file);
+    //// console.log(file);
 
     //if the file is and image with suported filetype or tell user that file is not suported
     if( fileType == 'image/jpeg' | fileType == 'image/png'){
@@ -95,7 +162,7 @@ function imagePreview (inputsClass,displayArea){
         $(displayArea).append(
         '<img src=' + e.result + '>'
         );//end of append
-      }//end of reder.onlod
+      };//end of reder.onlod
       reader.readAsDataURL(file);//get reader to read the file
     } else {
       $(displayArea).append(
@@ -121,29 +188,3 @@ function fillSelectWithNumber (numberOfOptions, selectId){
     ); //end of append
   } //end of for
 } //end of fillSelectWithNumber
-
-
-/*
- * PURPOSE : Validation of email field in input
- *  PARAMS :  Jquer Object - Field
- * RETURNS :  True or false
- *   NOTES : preisa ser arrumada para ser usada no site
- */
- function emailValidation(field) {
-   usuario = field.substring(0, field.indexOf("@"));
-   dominio = field.substring(field.indexOf("@")+ 1, field.length);
-
-   if ((usuario.length >=1) &&
-     (dominio.length >=3) &&
-     (usuario.search("@")==-1) &&
-     (dominio.search("@")==-1) &&
-     (usuario.search(" ")==-1) &&
-     (dominio.search(" ")==-1) &&
-     (dominio.search(".")!=-1) &&
-     (dominio.indexOf(".") >=1)&&
-     (dominio.lastIndexOf(".") < dominio.length - 1)) {
-   }
-   else{
-
-   }
- }

@@ -1,4 +1,4 @@
-<?php require_once("headerPreto.php") ?>
+<?php require_once("header.php") ?>
 
 <?php
 
@@ -95,11 +95,9 @@
 
       "CjuWUViqWYU",
 
-
       "BUOCfqDIHLw",
 
       "Q0IRAT2V-Zk",
-
 
       "tZ8EryMuqAU",
 
@@ -118,8 +116,8 @@
   );
  ?>
 
-<div class="container">
-  <h1>Portfólio</h1>
+<div class="container hide">
+  <h1 class="portfolio-title hide animated fadeIn">Portfólio</h1>
 
   <div class="row">
   <?php
@@ -127,7 +125,7 @@
   ?>
 
     <div class="col s12 m6 l3" style="margin:1% 0%;">
-      <div class="yt-container">
+      <div class="yt-container animated">
         <div class="youtube" data-embed="<?php echo $comercial ?>">
           <div class="play-button"></div>
         </div>
@@ -136,313 +134,6 @@
 
   <?php } ?>
 
-  <script  charset="utf-8">
-    if($(window).width > 992) {
-      $(".youtube").click(function(){
-
-      });
-    }
-  </script>
-
-
-
-<!--
-
-
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed=""> -->
-          <!-- <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l3">
-      <div class="yt-container">
-        <div class="youtube" data-embed="">
-          <div class="play-button"></div>
-        </div>
-      </div>
-    </div>   -->
 
   </div>
 
