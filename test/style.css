@@ -273,6 +273,9 @@ nav .button-collapse {
   nav.nav-extended {
     position: relative !important; } }
 
+.nav-content {
+  z-index: 9999; }
+
 #nav-mobile-socialLinks {
   display: none; }
   @media screen and (max-width: 992px) {

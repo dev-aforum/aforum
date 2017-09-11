@@ -472,6 +472,11 @@ nav{
 	}
 }
 
+// *HACK* fazendo com o que os links do menu fiquem acima do logo
+.nav-content{
+	z-index: 9999;
+}
+
 #nav-mobile-socialLinks {
 	display: none;
 	@media screen and (max-width: 992px){
