@@ -7,6 +7,12 @@
 
 // ================= galeria de fotos ==========================================
 
+
+// hack para garantir que o grid não quebre graças a pressão do container
+.container .row {
+    margin-left: auto!important;
+    margin-right: auto!important;
+}
 // filtro preto e branco para fotos em telas grandes
 @media screen and (min-width:992px) {
   .bw img{
@@ -24,8 +30,8 @@
 
   .col{
     // margens para simetria com grid de colunas do materializecss
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
   }
 
   // cada foto
@@ -72,14 +78,10 @@
       }
     }
 
-
-
-
     img{
-
       // responsividade das fotos
       max-width: 100%;
-
+      width: 100%;
     }
   }
 }
@@ -189,7 +191,7 @@
   .carousel-item img {
     position: absolute;
     width: auto !important;
-    left: 12.5%;
+    left: 12.5%;//
     max-height: 95%;
     max-width: 95%;
     top: 10%;
@@ -696,7 +698,7 @@ fieldset {
 
 .slider1, .slider10, .slider2, .slider3, .slider4,
 .slider5, .slider6, .slider7, .slider8, .slider9
-{ max-width: 150%; background-size: 100%; background-image: url('http://res.cloudinary.com/deemlslu0/image/upload/v1504729755/sprite_qmm00h.png'); }
+{ max-width: 150%; background-size: 100%; background-image: url('http://res.cloudinary.com/deemlslu0/image/upload/v1505160106/sprite_dksb7c.jpg'); }
 
 // .slider1 { background-position: 0 0%; }
 // // .slider10 { background-position: 0 11.113521%; background-size: 100%; }
@@ -729,7 +731,7 @@ fieldset {
 
   .slider2, .slider4, .slider5, .slider9, .slider1,
   .slider3, .slider6, .slider8, .slider7
-  { max-width: 150%; background-size: 115%; background-image: url('http://res.cloudinary.com/deemlslu0/image/upload/v1504733601/sprite_c2g5pk.png'); }
+  { max-width: 150%; background-size: 115%; background-image: url('http://res.cloudinary.com/deemlslu0/image/upload/v1505160100/sprite_eetzp7.jpg'); }
 
   .slider2 { background-position: 0 0%;  }
   .slider4 { background-position: 0 12.5%;  }

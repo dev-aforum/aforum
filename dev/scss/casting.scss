@@ -7,6 +7,12 @@
 
 // ================= galeria de fotos ==========================================
 
+
+// hack para garantir que o grid não quebre graças a pressão do container
+.container .row {
+    margin-left: auto!important;
+    margin-right: auto!important;
+}
 // filtro preto e branco para fotos em telas grandes
 @media screen and (min-width:992px) {
   .bw img{
@@ -24,8 +30,8 @@
 
   .col{
     // margens para simetria com grid de colunas do materializecss
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
   }
 
   // cada foto
@@ -72,14 +78,10 @@
       }
     }
 
-
-
-
     img{
-
       // responsividade das fotos
       max-width: 100%;
-
+      width: 100%;
     }
   }
 }
@@ -189,7 +191,7 @@
   .carousel-item img {
     position: absolute;
     width: auto !important;
-    left: 12.5%;
+    left: 12.5%;//
     max-height: 95%;
     max-width: 95%;
     top: 10%;

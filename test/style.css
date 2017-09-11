@@ -2,14 +2,18 @@
 /*******************************************************************************
 ########################### CASTING ############################################
 ********************************************************************************/
+.container .row {
+  margin-left: auto !important;
+  margin-right: auto !important; }
+
 @media screen and (min-width: 992px) {
   .bw img {
     filter: grayscale(100%); } }
 .casting-gallery {
   margin-top: 1.5% !important; }
   .casting-gallery .col {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem; }
+    padding-top: 0.75em;
+    padding-bottom: 0.75em; }
   @media screen and (min-width: 1200px) {
     .casting-gallery .casting-gallery-item:nth-child(3n+1) {
       animation-delay: 0.25s; }
@@ -29,7 +33,8 @@
     .casting-gallery .casting-gallery-item:nth-child(even) {
       animation-delay: 0.5s !important; } }
   .casting-gallery .casting-gallery-item img {
-    max-width: 100%; }
+    max-width: 100%;
+    width: 100%; }
 
 .modal-close {
   cursor: pointer;
@@ -419,7 +424,7 @@ fieldset {
 .slider5, .slider6, .slider7, .slider8, .slider9 {
   max-width: 150%;
   background-size: 100%;
-  background-image: url("http://res.cloudinary.com/deemlslu0/image/upload/v1504729755/sprite_qmm00h.png"); }
+  background-image: url("http://res.cloudinary.com/deemlslu0/image/upload/v1505160106/sprite_dksb7c.jpg"); }
 
 .slider9 {
   background-position: 0 0%; }
@@ -454,7 +459,7 @@ fieldset {
   .slider3, .slider6, .slider8, .slider7 {
     max-width: 150%;
     background-size: 115%;
-    background-image: url("http://res.cloudinary.com/deemlslu0/image/upload/v1504733601/sprite_c2g5pk.png"); }
+    background-image: url("http://res.cloudinary.com/deemlslu0/image/upload/v1505160100/sprite_eetzp7.jpg"); }
 
   .slider2 {
     background-position: 0 0%; }
