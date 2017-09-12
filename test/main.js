@@ -69,7 +69,7 @@ $(document).ready(function() {
           measure = $(this).attr("data-measure"); //medidas do modelo
 
       // redefinimos a variavel de nome concatenando-a com string de html
-      name = "<h2 class='carousel-title animated fadeInDown'>" + name + "</h2>";
+      name = "<h2 class='carousel-title animated  fadeInDown'>" + name + "</h2>";
 
       //inicializamos a variável do carousel
       var carousel = "";

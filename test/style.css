@@ -236,6 +236,12 @@ h2 {
   margin-top: 3% !important;
   margin-bottom: 3% !important; }
 
+#modal-indexPopUp {
+  background-color: transparent;
+  color: white !important; }
+  #modal-indexPopUp #modal-indexPopUp-close {
+    color: white !important; }
+
 nav.white ul.tabs li.tab a:hover {
   color: #ccc !important; }
 nav.white ul.tabs li.tab a.active {

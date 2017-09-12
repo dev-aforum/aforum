@@ -13,7 +13,7 @@
       <!-- Modal Trigger -->
       <a class="waves-effect waves-light btn modal-trigger" style="display:none" href="#modal-indexPopUp">Modal</a>
 			<!-- botão de fechar a modal -->
-			<i class="material-icons large modal-close" style="">close</i>
+			<i class="material-icons large modal-close" id="modal-indexPopUp-close" style="color:white;">close</i>
       <!-- modal -->
       <div id="modal-indexPopUp" class="modal" style="">
         <div class="modal-content"  id="content-video">
