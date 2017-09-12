@@ -193,10 +193,10 @@
 
       "masculino" => array(
 				//1
-    		array("Daniel A.",13,"Cabelo: Castanho Escuro | Olhos: Castanhos | Altura: 1,83 | Manequim: 38 | Busto: 91 | Cintura: 48 | Quadril: 95 | Sapato: 4"),
+    		array("Daniel A.",13,"Cabelo: Castanho Escuro | Olhos: Castanhos | Altura: 1,83 | Manequim: 38 | Busto: 91 | Cintura: 48 | Quadril: 95 "),
 
 				//2
-				array("Evandro M.",6,""),
+				array("Evandro M.",6,"Cabelo: Loiro | Olhos: Verdes | Altura: 1,85 | Manequim: 40 | Sapato: 42  | Torax: 92"),
 
 				//3
 				array("Fabricio B.",11,"Altura: 1,88	| Manequim: 38	| Busto: 87 | Cintura: 42	| 	Sapato: 42"),
@@ -275,20 +275,20 @@
 ?>
 
 <!-- botão de fechar a modal -->
-<i class="material-icons large modal-close hide" style="">close</i>
+<i class="material-icons large modal-close hide animated zoomIn" style="">close</i>
 <!-- moodal -->
 <div id="modal" class="modal modal-fixed-footer">
   <!-- modal content -->
   <div class="modal-content">
     <div class="row">
       <!-- seta de anterior -->
-      <div id="slider-prev-arrow" class="slider-arrow col s1 hide-on-med-and-down">
+      <div id="slider-prev-arrow" class="slider-arrow animated slideInLeft col s1 hide-on-med-and-down">
         <i class="material-icons">chevron_left</i>
       </div><!-- final da seta de anterior -->
       <!-- carrossel -->
       <div class="col s12 m12 l10 modal-caro carousel carousel-slider"></div>
       <!-- seta de próximo -->
-      <div id="slider-next-arrow" class=" slider-arrow col s1 hide-on-med-and-down">
+      <div id="slider-next-arrow" class=" slider-arrow col animated slideInRight s1 hide-on-med-and-down">
         <i class="material-icons large">chevron_right</i>
       </div> <!-- final da seta de próximo -->
     </div> <!-- final do row -->

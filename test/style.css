@@ -39,7 +39,7 @@
 .modal-close {
   cursor: pointer;
   font-size: 75px !important;
-  color: white;
+  color: black;
   margin-top: 5%;
   position: fixed;
   top: 5%;
@@ -49,14 +49,14 @@
     opacity: 0.8; }
 
 .modal {
-  background-color: rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 0 transparent;
+  background-color: rgba(255, 255, 255, 0.999);
   top: 10% !important;
   max-height: 90% !important;
   width: 100% !important;
   height: 85% !important;
   overflow: hidden;
-  z-index: 9 9999 !important; }
+  z-index: 99999999 !important;
+  color: black !important; }
   .modal .modal-content {
     overflow-y: visible !important;
     height: 100%;
@@ -71,17 +71,14 @@
   .modal .carousel-title {
     font-size: 2em;
     width: 100%;
-    text-align: center;
-    color: white; }
+    text-align: center; }
   .modal .measure {
-    color: white;
     text-align: center;
     display: inline-block;
     width: 100%;
     margin-top: 20px; }
 
 .slider-arrow {
-  color: white;
   display: flex;
   height: 80%;
   align-items: center;
