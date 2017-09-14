@@ -224,6 +224,12 @@
 
 				//11
 				array("Guilherme S.",6,"Altura: 1,86	| Manequim: 42 | Busto: 95 | Sapato: 42"),
+
+				//10
+				array("André M.",7,	"Cabelo: Cast. Claro |	Olhos: Castanho esverdeado | Altura: 1,89	| Manequim:40	| Busto: 90 | Cintura: 44	| Sapato:42"),
+
+				//11
+				array("Guilherme S.",6,"Altura: 1,86	| Manequim: 42 | Busto: 95 | Sapato: 42")
     	),
 
       "kids" => array(

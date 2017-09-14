@@ -55,7 +55,14 @@ $(document).ready(function() {
   // telephone input mask
   $("#telephone").mask("(99) 9999-9999",{
     // make sure that if users inputs wrong data it is cleared
+    translation:{
+      "9": {
+        pattern: /[0-9]/,
+        optional: false,
+      }
+    },
     clearIfNotMatch: true,
+
   });
   // cep input mask
   $("#cep").mask("99999-999");
@@ -227,7 +234,8 @@ $(document).ready(function() {
          email: true //deve estar formatado como email, nesse caso, com textos entre um arroba
        },
        telephone: { //telefone: obrigatório
-         required: true
+         required: true,
+         minlength: 10,
        },
        celphone: {
          required:true,

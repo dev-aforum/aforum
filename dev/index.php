@@ -45,7 +45,7 @@
 <li class="slider6" alt="" ></li>
 <li class="slider7" alt="" ></li>
 <li class="slider8" alt="" ></li>
-<li class="slider9" alt="" ></li>
+<li class="slider9 hide-on-small-only" alt="" ></li>
 
 	</ul>
 </div>
