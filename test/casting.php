@@ -111,7 +111,8 @@
 
       //18
       array("Diego L.", 3, "Cabelo: Loiro	| Olhos: Verdes | Altura: 1,85	| Manequim: 38 | Sapato: 43"),
-      //19
+
+			//19
       array("Felipe B.", 5, "Cabelo: Castanho Escuro | Olhos: Castanhos | Altura: 1,77 | Manequim: 38 | Sapato:42"),
 
       //20
@@ -137,17 +138,18 @@
     ),
 
     "feminino" => array(
-    		//1
-    		array("Ana L.", 3, "Cabelo: Castanho Claro |	Cor dos olhos: Castanho | Altura: 1,79 |	Manequim: 38 |	Busto: 80 | Cintura: 61 |	Quadril: 92 |	Sapato: 37" ),
+
+				//1
+				array("Julia P.", 8, "Cabelo: Castanho Claro	| Olhos: Castanhos |Altura: 1,75 |	Manequim: 36 | Busto: 88 | Cintura: 63 |	Quadril: 91	| Sapato: 37"),
 
     		//2
-    		array("Claire S.", 6, "Cabelo: Loiro	| Olhos: Verdes	| Altura: 1,72	| Manequim: 38 | Busto: 85 | Cintura: 69 | Quadril: 98 | Sapato: 38"),
+				array("Larissa P.", 8, "Cabelo: Castanhos Claro | Olhos: Verdes | Altura: 1,73	| Manequim: 36	| Busto: 78 | Cintura: 62 |	Quadril: 94	| Sapato: 39"),
 
     		//3
     		array("Dulce", 4, "Cabelo: Preto | Olhos: Castanhos | Altura: 1,76	| Manequim: 36 | Sapato: 38"),
 
     		//4
-    		array("Emanuely D.", 5, "Cabelo: Loiro	| Cor dos olhos: Verdes	 | Altura: 1,76 |	Manequim: 34	| Busto: 78 | Cintura: 58	| Quadril: 85 | Sapato: 37"),
+				array("Leticia C.", 12, "Cabelo: Castanhos Escuro |	Olhos: Verdes | Altura: 1,77	| Manequim: 38	| Busto: 82 | Cintura: 68	| Quadril: 97	| Sapato: 38"),
 
     		//5
     		array("Emily M.", 12, "Cabelo: Castanho Escuro |	Olhos: Castanhos | Altura: 1,85 |	Manequim: 36	| Busto: 81 | Cintura: 60	| Quadril: 87	| Sapato: 37"),
@@ -173,16 +175,17 @@
     		//12
     		array("Julia G.", 11, "Cabelo: Castanho Claro	| Olhos: Castanhos | Altura:  1,79 | Manequim: 36 |	Busto: 87  | Cintura: 61 |	Quadril:  88 |	Sapato: 37"),
 
-    		//13
-    		array("Julia P.", 8, "Cabelo: Castanho Claro	| Olhos: Castanhos |Altura: 1,75 |	Manequim: 36 | Busto: 88 | Cintura: 63 |	Quadril: 91	| Sapato: 37"),
+	  		//13
+	  		array("Ana L.", 3, "Cabelo: Castanho Claro |	Cor dos olhos: Castanho | Altura: 1,79 |	Manequim: 38 |	Busto: 80 | Cintura: 61 |	Quadril: 92 |	Sapato: 37" ),
 
     		//14
-    		array("Larissa P.", 8, "Cabelo: Castanhos Claro | Olhos: Verdes | Altura: 1,73	| Manequim: 36	| Busto: 78 | Cintura: 62 |	Quadril: 94	| Sapato: 39"),
+				array("Claire S.", 6, "Cabelo: Loiro	| Olhos: Verdes	| Altura: 1,72	| Manequim: 38 | Busto: 85 | Cintura: 69 | Quadril: 98 | Sapato: 38"),
 
     		//15
     		array("Laysla L.", 3, "Cabelo: Castanhos Escuro	| Olhos: Castanhos | Altura: 1,77	| Manequim: 38	| Busto: 86 | Cintura: 66	| Quadril: 94	| Sapato: 37"),
-    		//16
-    		array("Leticia C.", 12, "Cabelo: Castanhos Escuro |	Olhos: Verdes | Altura: 1,77	| Manequim: 38	| Busto: 82 | Cintura: 68	| Quadril: 97	| Sapato: 38"),
+
+				//16
+				array("Emanuely D.", 5, "Cabelo: Loiro	| Cor dos olhos: Verdes	 | Altura: 1,76 |	Manequim: 34	| Busto: 78 | Cintura: 58	| Quadril: 85 | Sapato: 37"),
 
     		//17
     		array("Nicolle I.", 10, "Cabelo: Castanho Escuro |	Olhos: Castanhos | Altura: 1,74 |	Manequim: 36	| Busto: 76 | Cintura: 62 | Quadril: 92	| Sapato: 38"),
@@ -196,7 +199,7 @@
     		array("Daniel A.",13,"Cabelo: Castanho Escuro | Olhos: Castanhos | Altura: 1,83 | Manequim: 38 | Busto: 91 | Cintura: 48 | Quadril: 95 "),
 
 				//2
-				array("Evandro M.",6,"Cabelo: Loiro | Olhos: Verdes | Altura: 1,85 | Manequim: 40 | Sapato: 42  | Torax: 92"),
+				array("Evandro M.", 5,"Cabelo: Loiro | Olhos: Verdes | Altura: 1,85 | Manequim: 40 | Sapato: 42  | Torax: 92"),
 
 				//3
 				array("Fabricio B.",11,"Altura: 1,88	| Manequim: 38	| Busto: 87 | Cintura: 42	| 	Sapato: 42"),

@@ -80,7 +80,6 @@ module.exports = function(grunt){
         files:["dev/img/**/*.{jpg,png,gif,mp4}"],
         tasks:[
               "clean:testImg",
-              "clean:prodImg",
               "copy:imgToTest",
             ]
       }

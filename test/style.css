@@ -112,7 +112,7 @@
   height: 65%; }
 
 * {
-  font-family: "Montserrat"; }
+  font-family: "Montserrat", sans-serif; }
 
 /*INTERFACE*/
 .form_fakeButton.form_upload_img_label {

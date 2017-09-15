@@ -235,7 +235,6 @@ $(document).ready(function() {
        },
        telephone: { //telefone: obrigatório
          required: true,
-         minlength: 10,
        },
        celphone: {
          required:true,
@@ -299,12 +298,10 @@ $(document).ready(function() {
      submitHandler:function(form){
        var data = new FormData($("#form_inscription")[0]);
        var url = 'https://intranet.aforum.com.br/cadastroScouterSeletiva/';
-      var name = Cookies.get("name");
+       var name = Cookies.get("name");
 
        if( name === $("[name='user_name']").val() ){
-
          alert("O cadastro de " + $("[name='user_name']").val() + " já foi realizado" );
-
        } else {
         var xhr =  $.ajax({
             type: "POST",
@@ -321,18 +318,17 @@ $(document).ready(function() {
                } else {
                  alert("Cadastro efetuado com sucesso");
                  Cookies.set( "name" , $("[name='user_name']").val() );
+                 location = "sucesso.php";
                }
              },
              error: function(){
                alert("Ocorreu um erro no envio dos dados, tente novamente mais tarde");
              }
            });
-
            console.log(xhr);
          }
-
-     }
-   });//final da função validate
+       }
+     });//final da função validate
 
 
    //
