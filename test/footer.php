@@ -21,10 +21,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js" charset="utf-8"></script>
 
 
+<!-- slick caro -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js" charset="utf-8"></script>
+
 <!-- javascript compilado -->
 <script src="main.js" charset="utf-8"></script>
 
-<script src="youtubeEmbed.js" charset="utf-8"></script>
 
 </body>
 </html>

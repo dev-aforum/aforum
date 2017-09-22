@@ -1,0 +1,12 @@
+<div id="foto-video" class="col s12">
+<!-- seta de anterior -->
+  <div id="slider-prev-arrow" class="slider-arrow animated slideInLeft col s1 hide-on-med-and-down">
+    <i class="material-icons">chevron_left</i>
+  </div><!-- final da seta de anterior -->
+  <!-- carrossel -->
+  <div class="col s12 m12 l10 modal-caro carousel carousel-slider"></div>
+  <!-- seta de próximo -->
+  <div id="slider-next-arrow" class=" slider-arrow col animated slideInRight s1 hide-on-med-and-down">
+    <i class="material-icons large">chevron_right</i>
+  </div> <!-- final da seta de próximo -->
+</div>

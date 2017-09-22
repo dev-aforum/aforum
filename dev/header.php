@@ -9,14 +9,14 @@
 
 ?>
 <!DOCTYPE html>
-<html>
+<html class="">
 <head>
 
   <!-- meta tags -->
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta http-equiv="Content-Language" content="pt-br" />
-  <meta name="viewport" content="width=device-width, initial-scalable=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- SEO TAGS -->
   <meta name="Keywords" content="forum, forum model, forum models, modelos, modelos curitiba, modelo passarela, casting, seleção de modelos, como ser modelo, formação de casting, new face, modelo feminino, modelo masculino, modelo infantil, new face curitiba, modelo curitiba, agencia de modelos, agencia de modelo, agencia new face, modelo infantil curitiba, modelo masculino curitiba, modelo faminino curitiba, seja forum, sejaforum, SEJA FORUM">
@@ -37,9 +37,14 @@
   <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css"/>
+  <!-- // Add the new slick-theme.css if you want the default styling -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.min.css"/>
+
   <!-- folha de estilo compilada -->
   <link rel="stylesheet" href="style.css">
-  
+
   <noscript>
     Infelizment esse site não é suportado pelo seu navegador. Para acessar o site da Forum por favor faça o download de um navegador mais moderno.
     O navegador com melhor funcionamento para esse site é o Google Chrome.
@@ -51,18 +56,18 @@
 
 
      <!-- Google analytics -->
-     <script>
+     <!-- <script>
        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
        ga('create', 'UA-62606403-1', 'auto');
        ga('send', 'pageview');
-     </script>
+     </script> -->
 
      <!-- FACEBOOK-->
      <!-- Facebook Pixel Code -->
-       <script>
+       <!-- <script>
        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
@@ -73,7 +78,7 @@
        </script>
        <noscript><img height="1" width="1" style="display:none"
        src="https://www.facebook.com/tr?id=586053591562369&ev=PageView&noscript=1"
-       /></noscript>
+       /></noscript> -->
      <!-- DO NOT MODIFY -->
      <!-- End Facebook Pixel Code -->
 

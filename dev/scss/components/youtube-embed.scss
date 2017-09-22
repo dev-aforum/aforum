@@ -1,0 +1,110 @@
+
+.youtube, .youtube-thumbnail {
+    background-color: #000;
+    position: relative;
+    padding-top: 56.25%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+.youtube img, .youtube-thumbnail img {
+    width: 100%;
+    top: -16.84%;
+    left: 0;
+    opacity: 0.7;
+}
+
+.youtube .play-button{
+    width: 90px;
+    height: 60px;
+    background-color: rgba(200,200,200,0.5);
+    -webkit-box-shadow: 0 0 30px rgba( 0,0,0,0.6 );
+            box-shadow: 0 0 30px rgba( 0,0,0,0.6 );
+    z-index: 1;
+    opacity: 0.8;
+    border-radius: 6px;
+}
+
+
+.youtube .play-button:before, .youtube-thumbnail .play-button:before {
+    content: "";
+    border-style: solid;
+    border-width: 15px 0 15px 26.0px;
+    border-color: transparent transparent transparent #fff;
+}
+
+.youtube img,
+.youtube .play-button, .youtube-thumbnail img, .youtube-thumbnail .play-button {
+    cursor: pointer;
+}
+.youtube img,
+.youtube iframe,
+.youtube .play-button,
+.youtube .play-button:before,
+.youtube-thumbnail img,
+.youtube-thumbnail .play-button,
+.youtube-thumbnail .play-button:before{
+    position: absolute;
+}
+
+
+.youtube .play-button,
+.youtube .play-button:before,
+.youtube-thumbnail .play-button,
+.youtube-thumbnail .play-button::before
+ {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d( -50%, -50%, 0 );
+            transform: translate3d( -50%, -50%, 0 );
+}
+.youtube iframe {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#content-video{
+  @media screen and (min-width: 1024px){
+    margin-left: 10%;
+  }
+}
+
+.s12.modal-caro{
+  margin:0px!important;
+}
+
+.yt-slider-nav-container{
+  margin-top:0%!important;
+  width: 50%!important;
+  margin-left: 25%!important;
+  .youtube-thumbnail .play-button {
+      z-index: 1;
+      opacity: 0.8;
+      border-radius: 6px;
+  }
+}
+
+.yt-slider-container{
+    max-width: 70%;
+    margin-left: 15%;
+    margin-top: 5%;
+
+    @media screen and (max-width: 992px){
+      max-width: 100%;
+      margin-left: 0%; 
+      margin-top: 20%;
+
+    }
+  //regras para sobrepor as regras do slider
+  img.yt-embed-img{
+    width: 100%!important;
+    top: -16.84%!important;
+    left: 0!important;
+    max-width: none!important;
+    max-height: none!important;
+    opacity: 0.7!important;
+  }
+}

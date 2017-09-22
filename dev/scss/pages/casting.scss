@@ -1,0 +1,233 @@
+/*******************************************************************************
+########################### CASTING ############################################
+********************************************************************************/
+// descrição:
+// essa folha de estilos controla as sessões de casting do site
+
+
+// ================= galeria de fotos ==========================================
+
+
+// hack para garantir que o grid não quebre graças a pressão do container
+.container .row {
+    margin-left: auto!important;
+    margin-right: auto!important;
+}
+// filtro preto e branco para fotos em telas grandes
+@media screen and (min-width:992px) {
+  .bw img{
+    filter: grayscale(100%);
+  }
+}
+
+// galeria de fotos
+.casting-gallery{
+
+  // opacidade gerada para animação
+  // opacity: 0;
+  // respiro para o menu
+  margin-top:1.5%!important;
+
+  .col{
+    // margens para simetria com grid de colunas do materializecss
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+  }
+
+  // cada foto
+  .casting-gallery-item{
+
+    // SCROLL MAGIC
+
+    // delay progressivo de imagens para telas grandes
+    @media screen and (min-width: 1200px){
+
+      &:nth-child(3n+1){
+        animation-delay: 0.25s ;
+      }
+
+      &:nth-child(3n+2){
+        animation-delay: 0.5s;
+      }
+
+      &:nth-child(3n+0){
+        animation-delay: 0.75s;
+      }
+
+      &:nth-child(3){
+        animation-delay: 0.083s!important ;
+      }
+
+      &:nth-child(2){
+        animation-delay: 0.027s!important;
+      }
+
+      &:nth-child(1){
+        animation-delay: 0.009s!important;
+      }
+
+    }
+
+    // delay progressivo de imagens para telas pequenas
+    @media screen and (max-width: 600px){
+      &:nth-child(odd){
+        animation-delay: 0.25s!important;
+      }
+      &:nth-child(even){
+        animation-delay: 0.5s!important;
+      }
+    }
+
+    img{
+      // responsividade das fotos
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}
+
+// // garante comportamento mais semantico e trigger para modal fazendo o link
+
+
+
+// ================= modal =====================================================
+.modal{
+  // box-shadow: 0 0 0 rgba(0,0,0,0);
+  top: 2.5% !important;
+  max-height: 95% !important;
+  width: 95% !important;
+  height: 95% !important;
+  overflow: hidden;
+  z-index:99999999!important;
+  #foto-video{
+    margin-bottom: 2em;
+  }
+
+  .modal-content{
+    overflow-y: hidden!important;
+    overflow-x: hidden;
+
+    @media screen and (max-width: 992px){
+      overflow-y: scroll!important;
+
+    }
+
+    .row{
+      height: 80%;
+    }
+
+    .casting-modal-profile{
+      margin-top: 2.5%;
+      @media screen and (min-width: 992px){
+        height: 100%;
+        margin-top: 0%;
+      }
+    }
+
+    .casting-modal-content {
+      height: 100%;
+      margin-top: 2.5%;
+      @media screen and (min-width: 992px){
+        margin-top: 0%;
+      }
+    }
+
+    // título da modal
+    .carousel-title {
+      @media screen and (max-width: 992px){
+        text-align:center;
+      }
+    }
+
+    //medidas do modelo
+    .measure{
+      @media screen and (max-width: 992px){
+        text-align:center;
+      }
+      display: inline-block;
+      width: 100%;
+      margin-top: 20px;
+      @media screen and (min-width: 992px){
+        margin-left: 25%;
+      }
+    }
+  }
+
+
+
+}
+
+
+
+// ================= carrossel ==========================================
+
+  .slider-arrow {
+    cursor:pointer;
+  }
+  .slick-slider{
+    display: flex;
+    align-items: center;
+  }
+
+  .slick-slide {
+    outline: none;
+    cursor: pointer;
+  }
+
+  .slick-list,  .slick-track, #foto-video{
+    height: 100%!important;
+    width: 100%;
+  }
+  .modal-caro img{
+    // width: 80%;
+    // position: absolute;
+    max-width: 100%;
+    max-height: 97.5%;
+    margin-top: 1.25%;
+  }
+
+    .carousel-img-portrait{
+      height: 95%;
+      width: auto;
+    }
+
+    .modal-caro{
+
+      &:focus{
+        border: 0px;
+      }
+      height: 80%!important;
+
+    }
+
+    .modal-caro-nav{
+
+      height: 20%!important;
+      .slick-slide{
+        overflow: hidden;
+      }
+      .slider-img, .yt-slider-container{
+        max-width: 95%;
+        max-height: 95%;
+      }
+    }
+
+  .modal-caro.transparent, .modal-caro-nav.transparent{
+    opacity: 0!important;
+  }
+
+  .modal-caro-nav, .modal-caro{
+    animation-delay: 1s;
+  }
+
+    // .slick-track, .slick-list{
+    //   width: 100%!important;
+    // }
+// .carousel-slider {
+//   height: 80% !important;
+//   @media screen and (max-width: 700px) {
+//     height: 65% !important;
+//   }
+//
+
+// }
