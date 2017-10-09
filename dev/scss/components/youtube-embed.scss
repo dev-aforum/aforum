@@ -66,18 +66,11 @@
     left: 0;
 }
 
-#content-video{
-  @media screen and (min-width: 1024px){
-    margin-left: 10%;
-  }
-}
-
 .s12.modal-caro{
   margin:0px!important;
 }
 
 .yt-slider-nav-container{
-  margin-top:0%!important;
   width: 50%!important;
   margin-left: 25%!important;
   .youtube-thumbnail .play-button {
@@ -94,7 +87,7 @@
 
     @media screen and (max-width: 992px){
       max-width: 100%;
-      margin-left: 0%; 
+      margin-left: 0%;
       margin-top: 20%;
 
     }

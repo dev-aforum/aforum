@@ -1,11 +1,21 @@
 <?php
-  //SESSION
-  session_start();
 
-  if ( !isset($_SESSION["modal"]) ) {
+// // FORÇANDO O HTTPS
+// {
+// $new_url = "https://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+// header("Location: $new_url");
+// exit;
+// }
+//
+// ForceHTTPS(); //para chamar a função
 
-    $_SESSION["modal"] = true;
-  }
+//SESSÃO
+session_start();
+
+if ( !isset($_SESSION["modal"]) ) {
+
+  $_SESSION["modal"] = true;
+}
 
 ?>
 <!DOCTYPE html>
@@ -17,13 +27,13 @@
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta http-equiv="Content-Language" content="pt-br" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="EXPIRES" content="Sat, 01 Jan 2000 11:12:01 GMT" />
+  <meta http-equiv="PRAGMA" content="NO-CACHE" />
 
   <!-- SEO TAGS -->
   <meta name="Keywords" content="forum, forum model, forum models, modelos, modelos curitiba, modelo passarela, casting, seleção de modelos, como ser modelo, formação de casting, new face, modelo feminino, modelo masculino, modelo infantil, new face curitiba, modelo curitiba, agencia de modelos, agencia de modelo, agencia new face, modelo infantil curitiba, modelo masculino curitiba, modelo faminino curitiba, seja forum, sejaforum, SEJA FORUM">
   <meta name="Description" content="Agência de modelos de 3 a 65 anos, comerciais e fashion em Curitiba. Conhecemos e atendemos a expectativa das empresas." />
-  <meta name="Author" content="Agência Eureka! Agência de publicidade e propaganda em Curitiba" />
-  <meta http-equiv="EXPIRES" content="Sat, 01 Jan 2000 11:12:01 GMT" />
-  <meta http-equiv="PRAGMA" content="NO-CACHE" />
+
   <meta name="robots" content="index, follow" />
 
   <title>FORUM MODEL MANAGEMENT | AGÊNCIA DE MODELOS</title>
@@ -121,30 +131,30 @@
 
             <!-- casting -->
             <!-- casting advanced link -->
-            <li><a href="casting.php?categoria=advanced">Advanced</a></li>
+            <li><a href="casting-advanced">Advanced</a></li>
             <!-- casting masculino link -->
-            <li><a href="casting.php?categoria=masculino">Masculino</a></li>
+            <li><a href="casting-masculino">Masculino</a></li>
             <!-- casting feminino link -->
-            <li><a href="casting.php?categoria=feminino">Feminino</a></li>
+            <li><a href="casting-feminino">Feminino</a></li>
             <!-- casting development link -->
-            <li><a href="casting.php?categoria=comercial">Comercial</a></li>
+            <li><a href="casting-comercial">Comercial</a></li>
             <!-- casting kids link -->
-            <li><a href="casting.php?categoria=kids">Kids</a></li>
+            <li><a href="casting-kids">Kids</a></li>
 
             <div class="divider">
 
             </div>
             <!-- info -->
             <!-- portfolio -->
-            <li><a href="portfolio.php">Portfólio</a></li>
+            <li><a href="portfolio">Portfólio</a></li>
             <!-- register form link -->
-            <li><a href="sejaforum.php">Seja Forum</a></li>
+            <li><a href="seja-forum">Seja Forum</a></li>
             <!-- about us link  -->
-            <li><a href="agenciaforum.php">A Forum</a></li>
+            <li><a href="agencia-forum">A Forum</a></li>
             <!-- blog link  -->
             <li><a href="htpp://aforum.com.br/blog">Blog</a></li>
             <!-- contact info link -->
-            <li><a href="contato.php">Contato</a></li>
+            <li><a href="contato">Contato</a></li>
           </ul>
         </div> <!-- end of mobile menu -->
 
@@ -153,27 +163,27 @@
           <ul class="tabs tabs-transparent">
               <!-- casting -->
               <!-- casting advanced link -->
-              <li class="tab left"><a target="_self" href="casting.php?categoria=advanced" class="black-text">Advanced</a></li>
+              <li class="tab left"><a target="_self" href="casting-advanced" class="black-text">Advanced</a></li>
               <!-- casting masculino link -->
-              <li class="tab left"><a target="_self" href="casting.php?categoria=masculino" class="black-text">Masculino</a></li>
+              <li class="tab left"><a target="_self" href="casting-masculino" class="black-text">Masculino</a></li>
               <!-- casting feminino link -->
-              <li class="tab left"><a target="_self" href="casting.php?categoria=feminino" class="black-text">Feminino</a></li>
+              <li class="tab left"><a target="_self" href="casting-feminino" class="black-text">Feminino</a></li>
               <!-- casting development link -->
-              <li class="tab left"><a target="_self" href="casting.php?categoria=comercial" class="black-text">Comercial</a></li>
+              <li class="tab left"><a target="_self" href="casting-comercial" class="black-text">Comercial</a></li>
               <!-- casting kids link -->
-              <li class="tab left"><a target="_self" href="casting.php?categoria=kids" class="black-text">Kids</a></li>
+              <li class="tab left"><a target="_self" href="casting-kids" class="black-text">Kids</a></li>
               <!-- info -->
 
               <!-- portfolio -->
-              <li class="tab right"><a target="_self" href="portfolio.php" class="black-text">portfólio</a></li>
+              <li class="tab right"><a target="_self" href="portfolio" class="black-text">portfólio</a></li>
               <!-- register form link -->
-              <li class="tab right"><a target="_self" href="sejaforum.php" class="black-text">Seja Forum</a></li>
+              <li class="tab right"><a target="_self" href="seja-forum" class="black-text">Seja Forum</a></li>
               <!-- about us link  -->
-              <li class="tab right"><a target="_self" href="agenciaforum.php" class="black-text">A Forum</a></li>
+              <li class="tab right"><a target="_self" href="agencia-forum" class="black-text">A Forum</a></li>
               <!-- blog link  -->
               <li class="tab right"><a target="_self" href="http://www.aforum.com.br/blog" class="black-text">Blog</a></li>
               <!-- contact info link -->
-              <li class="tab right"><a target="_self" href="contato.php" class="black-text">Contato</a></li>
+              <li class="tab right"><a target="_self" href="contato" class="black-text">Contato</a></li>
           </ul>
         </div> <!-- end of tabs desktop menu-->
 
@@ -191,3 +201,12 @@
 
 
       </ul>   <!-- end of mobile social links -->
+
+
+      <div class="loading-animation hide animated fadeIn">
+      		<div class="lds-css ng-scope">
+      	  <div style="width:100%;height:100%" class="lds-rolling">
+      	    <div></div>
+      	  </div>
+      	</div>
+      </div>

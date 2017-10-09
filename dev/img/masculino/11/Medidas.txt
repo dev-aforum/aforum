@@ -1,0 +1,6 @@
+Altura: 1,85
+Manequim: 40
+Busto: 92
+Cintura: 40
+Quadril: 92
+Sapato: 39

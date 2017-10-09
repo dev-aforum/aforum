@@ -3,6 +3,19 @@
 <?php
 
   $comerciais = array(
+
+      'XJsgtXigmCc',
+
+      'Z_9wlQS48AQ',
+
+      '-7U2i0I-TWI',
+
+      'Nv-xgfu61FI',
+
+      'vLjHQP98tVo',
+
+      'HQR21NSJSiY',
+
       "i92zZBo-VW4",
 
       "M8SmpZ7LzjQ",
@@ -125,7 +138,7 @@
   ?>
 
     <div class="col s12 m6 l3" style="margin:1% 0%;">
-      <div class="yt-container animated">
+      <div class="yt-container animated" style="opacity:0;">
         <div class="youtube" data-embed="<?php echo $comercial ?>">
           <div class="play-button"></div>
         </div>

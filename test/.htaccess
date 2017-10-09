@@ -1,0 +1,20 @@
+Options +FollowSymlinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^aforum.com.br
+RewriteRule (.*) http://www.aforum.com.br/$1 [R=301,L]
+
+
+#RewriteRule ^casting/([a-zA-Z0-9]+)/$ casting.php?categoria=$1
+
+#RewriteRule ^casting/([a-zA-Z]+)$ casting.php?categoria=$1  [NC,L,QSA]
+
+RewriteRule ^seja-forum$ sejaforum.php [NC,L]
+RewriteRule ^agencia-forum$ agenciaforum.php [NC,L]
+RewriteRule ^sucesso$ sucesso.php [NC,L]
+RewriteRule ^contato$ contato.php [NC,L]
+RewriteRule ^portfolio$ portfolio.php [NC,L]
+RewriteRule ^casting-masculino$ casting.php?categoria=masculino [NC,L]
+RewriteRule ^casting-feminino$ casting.php?categoria=feminino [NC,L]
+RewriteRule ^casting-kids$ casting.php?categoria=kids [NC,L]
+RewriteRule ^casting-advanced$ casting.php?categoria=advanced [NC,L]
+RewriteRule ^casting-comercial$ casting.php?categoria=comercial [NC,L]

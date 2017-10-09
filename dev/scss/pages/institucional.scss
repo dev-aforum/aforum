@@ -1,0 +1,576 @@
+// === INSTICIONAL ============================================================ //
+// Página institucional da Forum Model
+.institucional{
+  // ***HACK*** //
+  // sobrepondo bordas dos cards
+  .card, .card * {
+    border-radius: 0px!important;
+  }
+  section{
+    margin: 15% 0px;
+  }
+
+  // === TÍTULO DA PÁGINA ===================================================== //
+  // regras para tornar o tamanho do título da página grande a responsivo
+  .titulo-pagina{
+    font-size: 7.5em;
+    @media screen and (max-width: 600px){
+      font-size: 4em;
+    } // final da media query
+  } // Final do título da página
+  // ========================================================================== //
+
+  .subtitulo{
+    @media screen and (max-width: 992px){
+      font-size: 1.25rem;
+    }
+
+    @media screen and (max-width: 600px){
+      font-size: 1rem;
+    }
+  }
+
+  // === SESSÕES ============================================================== //
+  // Regras gerais para sessões da página
+
+  // === TÌTULO DAS SESSÕES =================================================== //
+  .container-titulo{
+    // Regras geraris para o título da sessão, alinha os elementos em sua base
+    display: flex;
+    align-items: flex-end; // alinha os itens na base
+    justify-content: center; // centralizamos os itens
+    margin-bottom: 3%; // adcionamos a margem inferior que foi tirada do título
+    // icone do título
+    // regras para tornar o ícone responsivo
+    .icone-titulo{
+      height: 10rem;
+      margin-left: 1.5%;
+      @media screen and (max-width: 9992px){
+        height: 7.5rem;
+      } // Final da media query para tablet
+      @media screen and (max-width: 600px){
+        height: 5rem;
+      } // Final da media query para mobile
+    } // Final do ícone do título
+
+    // Título da sessão
+    .titulo{
+      margin-bottom: 0px!important; //removemos a margem inferior para poder
+                                    // alinhar com o ícone
+
+      @media screen and (max-width: 992px){
+        font-size: 3rem;
+      }
+
+      @media screen and (max-width: 600px){
+        font-size: 2.5rem;
+      }
+    } // Final do título
+  } // Final do container do título
+// ============================================================================ //
+
+// === MISSÃO, VISÃO E VALORES ================================================ //
+
+  // === TABS ================================================================= //
+  // deixando o indicador branco
+  .indicator{
+    display: inherit!important;
+    background-color: #aaa;
+    height: 5px;
+
+  }
+
+  // adaptando o texto do título
+  .tab-title{
+    @media screen and (max-width: 600px){
+      font-size: 0.8em!important;
+    }
+  }
+
+  .tabs-missao-visao-valores{
+    box-shadow: 5px 5px 0px!important;
+    border: solid black 1px;
+    padding: 0px!important;
+  }
+  //altura das tabs
+  .tabs-content .carousel,.tab-content{
+    // definindo uma altura padrão para melhor swipe já
+    // que há uma bg-color
+    height: 300px;
+    @media screen and (max-width: 600px){
+      height: 350px
+    } // final da media query
+    // adaptando o texto do conteúdo da tab
+    .tab-content-text{
+      font-size: 2em;
+      @media screen and (max-width: 600px){
+        font-size: 1.5em;
+      }// final media query
+    } // final do texto da tab
+  } //final das tabs e conteudo
+  // ========================================================================== //
+// ============================================================================ //
+
+// === ESTRUTURA ============================================================== //
+  // === SECTION ============================================================== //
+  // regras para toda a sessão
+
+  // === HACK PARA Z-INDEX ==================================================== //
+  // Por algum motivo uma sessão estava abaixo da outra, fazendo o material box
+  // ficar abaixo do link da modal dos depoimentos. Resolvi isso dando uma posição
+  // e index para toda a sessão do material box
+  #estrutura{
+    position: relative;
+    z-index: 2;
+  }
+
+  // === IMAGE GALLERY ======================================================== //
+  .galeria-estrutura{
+
+    // === CARROSSEL ========================================================== //
+    // Carrosel de imagens slick
+    .carrossel-estrutura{
+      // *** HACK *** //
+      // garantimos que o materialbox fique acima da sessão abaixo
+      position: relative;
+      z-index: 1;
+      box-shadow: 7px 7px 0px #ccc;
+
+      @media screen and (max-width: 600px){
+        box-shadow: none;
+        border: none;
+      }
+
+      img{
+        width: 98%;
+        @media screen and (min-width: 992px){
+          width: 100%;
+        }
+      }
+      // texto do carrosel
+      .caption{
+        @media screen and (min-width: 992px){
+          position: absolute;
+          bottom: 0;
+          height: auto;
+          background-color: rgba(0,0,0,0.9)!important;
+          width: 100%;
+        } // final da media query
+        padding: 5%;
+        z-index: 1;
+        height: 100px;
+        width: 98%;
+      } // final do caption
+    }//final do carrossel
+    // ======================================================================== //
+
+    // === MINIATURAS DE NAVEGAÇÃO ============================================ //
+    // galeria de miniaturas que serve de navegação pro slider
+    // as miniaturas diminuem no hover e tem sombra projetada dura
+    .miniaturas-navegacao{
+
+      position: relative;
+      z-index: 0;
+      .imagem-miniatura-navegacao{
+        // border: 1px solid black;
+        transition: transform 1s, filter 0.75s;
+        cursor: pointer;
+        &:hover{
+          transform: scale(0.9);
+          filter: grayscale(50%);
+        } // final do hover
+      } // final das regras para as miniaturas de navegação
+    }// final das miniaturas de navegacao
+    // ======================================================================== //
+  }// final da galeria de imagens da estrutura
+// ============================================================================ //
+
+  // === OPINIÃO DE QUEM É FORUM ============================================== //
+  // Galeria de links dos depoimentos dos modelos que abrem em modal. No hover os links
+  // tem a sombra animada
+
+  // === MODAL DOS VIDEOS ===================================================== //
+  #modal-depoimentos{
+    // tiramos a sombra padrão da modal
+    box-shadow: none!important;
+    .modal-content{
+      // damos uma largura e margem para o conteúdo sempre caber na view e ficar
+      // centralizado
+      .yt-container-wrapper{
+        margin-left: 10%;
+        width: 80%;
+      } // final do container do iframe lazyLoad
+    } // findal da div de conteudo da modal de depoimentos
+  } // final da modal de depoimentos
+  // ========================================================================== //
+
+  // === GALERIA DE DEPOIMENTOS =============================================== //
+  // A Galeria de depoimentos tem comporamentos baseados no hover: animações
+  // e o background em jpeg é trocado por um gif animado. A animação é basicamente
+  // composta pelos seguintes acontecimentos: O nome do modelo sobe,  a cobertura
+  // da foto fica mais escura, a sombra aumenta e ganha cor.
+  .galeria-depoimentos{
+
+    // === Itens da galeria ===================================================== //
+    .galeria-depoimentos-item{
+      cursor: pointer;
+      position: relative;
+      box-shadow: 2px 2px 0 rgba(0,0,0,0.5);
+      transition: box-shadow 1s;
+      z-index: 0;
+      margin-top: 0.75rem;
+      margin-bottom: 0.75rem;
+
+      // nome do modelo
+      .galeria-depoimentos-item-nome{
+        display: none;
+        color: white;
+        padding: 5%;
+        z-index: 2;
+        position: absolute;
+        bottom:0;
+        width: 100%;
+        height: auto;
+        font-size: 2em;
+        font-weight: bolder;
+      } // final do nome
+
+      // cobertura preta
+      .galeria-depoimentos-item-cover{
+        background-color: rgba(0,0,0,0.6);
+        transition: background-color 0.5s;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+      } // final da cobertura
+
+      // foto do modelo
+      .galeria-depoimentos-item-background{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 0;
+        background-repeat: none;
+        top: 0;
+        background-image: url("img/daniel-leve.jpg");
+        background-size: contain;
+        filter: blur(0px);
+        transition: filter 0.5s, background-image 1.5s ;
+      } // final do background
+
+      // botão de play
+      .galeria-depoimentos-item-play-container{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        z-index: 2;
+        justify-content: center;
+        align-items: center;
+        transform: scale(1);
+        transition: transform 0.5s;
+
+        .galeria-depoimentos-item-play-button{
+          z-index: 1;
+          opacity: 0.8;
+          border-radius: 6px;
+          position: relative;
+          transition: opacity 0.75s;
+
+
+          &:before, {
+            content: "";
+            border-style: solid;
+            border-width: 30px 0 30px 52px;
+            border-color: transparent transparent transparent #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d( -50%, -50%, 0 );
+          }
+
+          &:hover{
+            &:before{
+              filter: drop-shadow(4px 4px 5px rgba(255,255,255,0.5));
+            }
+          }
+        }
+      }// final das regras do botão de play
+
+      // hover
+      &:hover{
+
+        box-shadow: 10px 10px 0 rgba(0,0,0,0.9);
+        .galeria-depoimentos-item-play-button{
+          opacity: 1;
+        }
+        .play-button-container{
+          transform: scale(1.2);
+        }
+
+        .galeria-depoimentos-item-background{
+          background-image: url("img/daniel-leve-2.gif");
+          filter: blur(1px);
+          transition: filter 0.5s, background-image 0.5s ;
+        }
+
+        .galeria-depoimentos-item-nome{
+          display: inherit;
+        }
+
+        .galeria-depoimentos-item-cover{
+          background-color: rgba(0,0,0,0.75);
+        }
+
+      } //findal do hover
+
+      // mobile
+      @media screen and (max-width: 992px){
+
+        box-shadow:5px 5px 0 rgba(0,0,0,0.75);
+
+        .galeria-depoimentos-item-background{
+          &:hover{
+            background-image: url("img/daniel.jpg")!important;
+          }
+        }
+
+        .galeria-depoimentos-item-cover{
+          background-color: rgba(0,0,0,0.6);
+        }
+
+        .galeria-depoimentos-item-nome{
+          display: inherit;
+          font-size: 1em;
+        }
+
+        .galeria-depoimentos-item-play-button:before, {
+            border-width: 15px 0 15px 26px;
+        }
+
+      }//final da media query
+
+      // *** HACK *** //
+      // o padding no after garante o tamanho quadrado da div
+      &:after {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+      }//final do after
+    }// final do item da galeria de depoimentos
+  } // final da galeria de depoimentos
+  // ============================================================================ //
+
+  // === TIME FORUM ============================================================= //
+
+  .item-time{
+    @media screen and (max-width: 992px){
+      font-size: 2rem;
+    }
+    @media screen and (max-width: 600px){
+      font-size: 1.5rem;
+    }
+  }
+
+  .item-time-corpo{
+    overflow-y: scroll;
+  }
+  // === CARD =================================================================== //
+  .card-team{
+    box-shadow: 5px 5px 0px!important;
+    border: solid black 1px;
+    filter: grayscale(75%);
+    transform: scale(1);
+    transition: filter 0.5s, transform 0.35s;
+    &:hover{
+      filter: grayscale(0%);
+      transform: scale(1.0075);
+    }
+  }
+
+  // ============================================================================ //
+
+  // === CLIPPING =============================================================== //
+  // card da noticia
+  .noticia-clipping{
+
+    box-shadow: 5px 5px 0px black!important; //borda projetada dura
+    border-radius: 0px; // retira a borda redonda
+    border: solid black 1px;
+    filter: grayscale(75%);
+    transform: scale(1);
+    transition: filter 0.5s, transform 0.35s;
+
+    .card-image{
+      box-shadow: none; // tira a sombra opacada da imagem
+    } // final da card-image
+
+    // cobertura para a imagem. Garante legibilidade do texto
+    .cover{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: rgba(0,0,0,0.2);
+      transition: background-color 1s;
+      z-index: 1;
+    } // final do cover
+
+    // garante que o título da notícia fique acima do cover
+    .card-title{
+      z-index: 2;
+    } // final do título
+
+    // retira a borda da imagem
+    img{
+      border-radius: 0px;
+    } // final da imagem
+
+    // Comportamentos de hover
+    &:hover{
+      filter: grayscale(0%);
+      transform: scale(1.0075);
+      .cover{
+        background-color: rgba(0,0,0,0.15);
+      } // final dos comportamentos de hover do cover
+    } //final dos comporamentos de hover
+  } //final do cartão
+
+  // === FEEDBACK ============================================================= //
+  // Slider com breves depoimentos de celebridades e influenciadores parceiros
+  // da Forum Model e Forum School. Pode conter texto e imagem ou ainda um link
+  // para vídeo que se abre na modal. Usa o plugin Slider do materializecss com
+  // documentação disponível em: http://materializecss.com/media.html
+
+  .slider-feedback{
+    .slider-feedback-slides{
+      background-color:#fff;
+
+      .slider-feedback-slide-img-cover{
+        background-color: rgba(0,0,0, 0.25);
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+
+        &.slider-feedback-slide-img-cover-right{
+          margin-left: 50%;
+        }
+
+        &.slider-feedback-slide-img-cover-left{
+          margin-left: 12.5%;
+        }
+
+        @media screen and (max-width: 922px){
+          width: 100%;
+          margin-left: 0%!important;
+        }
+      }
+      .slider-feedback-slide-img{
+        width:50%;
+        // imagens alinhadas a esquerda
+        &.slider-feedback-slide-img-left{
+          margin-left:12.5%;
+        }
+
+        // imagens alinhadas a esquerda
+        &.slider-feedback-slide-img-right{
+          margin-left:50%;
+        }
+
+        @media screen and (max-width: 992px){
+          width: 100%;
+          margin-left: 0%!important;
+        }
+
+      }
+      .slider-feedback-slide-caption{
+        width:35%;
+        left:0;
+        top:30%;
+
+
+        // alinhado a direita
+        &.right-align{
+          margin-left:65%;
+        }
+
+        // alinhado a esquerda
+        &.left-align{
+          margin-left:12.5%;
+        }
+
+        h3{
+          font-weight: 600;
+        }
+
+        h5{
+          font-weight: 500;
+        }
+
+        a{
+          border: 0.5px solid black;
+          color: rgba(0,0,0,0.8)!important;
+          padding: 2%;
+          transition: background-color 0.5s, color 0.5s, box-shadow 0.5s;
+
+          &:hover{
+            background-color: #000!important;
+            color: white!important;
+            box-shadow: 3px 3px 0px #ccc;
+          }
+        }
+
+        @media screen and (max-width: 992px){
+          width: 100%;
+          top: 52%;
+          margin-left: 0px!important;
+
+          padding-right: 5%;
+          padding-left: 5%;
+          padding-bottom: 5%;
+          h3,h5,a{
+            color: white!important;
+          }
+
+          a{
+            border: 1px solid white;
+          }
+          // margin-bottom: 3%;
+          }
+
+        @media screen and (max-width: 600px){
+          h3{
+            font-size: 2rem;
+          }
+
+          h5{
+            font-size: 1.25rem;
+          }
+
+          // transform: scale(0.8);
+          // text-align: center!important;
+        }
+      }
+    }
+
+    // trocando as cores pontos de navegação
+    .indicators{
+      .indicator-item.active{
+        background-color: #000;
+      }
+    }
+
+  }
+
+  // ========================================================================== //
+} // final da classe institucional
+// ============================================================================ //
+
+// ***HACK**//
+// mudando opacidade do modal overlay para garantir legilidadde em textos
+// com modal transpartente
+.modal-overlay{
+  opacity: 0.9!important;
+}

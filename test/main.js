@@ -1,129 +1,170 @@
+// **************************************************************************** //
+// === CASTING ================================================================ //
+// ***************************************************************************//
+
+// === DESCRIÇÃO ============================================================== //
+// Esse é o Javascript que controla as interações nas galerias de fotos com modal
+// do casting da agência. Esse script adciona e retira uma classe com filtro preto
+// e branco nas fotos, inicializa a modal, consome os dados das tags data do link
+// da modal e adciona a modal. Quando a modal fecha esses dados são excluidos
+
+// OBS: SERIA INTERESSANTE EM OUTRO MOMENTO ADCIONAR REGRAS PARA NÃO INICILIZAR
+// O SLICK DE NAVEGAÇÃO SE A TELA FOR MENOR QUE 992px
+// ============================================================================ //
+
+// === DOC. READY FN ========================================================== //
+// Quando o DOM estiver pronto
 $(document).ready(function() {
 
+  // === VARIÁVERIS GLOBAIS =================================================== //
+  // Variáveis declaradas no maior escopo do código para garantir utilização
+  // por todo o código
 
+  var // medições de layout
+      itemWidth,
+      itemHeight,
+      contentWidth,
+      contentHeight,
 
-  // CASTING
+      // contagens para carrossel
+      slidesNumber,
+      itemsCount,
 
-  // Esse é o Javascript que controla as interações nas galerias de fotos com modal
-  // do casting da agência. Esse script adciona e retira uma classe com filtro preto
-  // e branco nas fotos, inicializa a modal, consome os dados das tags data do link
-  // da modal e adciona a modal. Quando a modal fecha esses dados são excluidos
+      // dados do modelo recuperados com data biding
+      photoCount, // numero de fotos no carrosel do modelo
+      id, // id do modelo
+      category, //categoria do modelo
+      name, //nome do modelo
+      measure, //medidas do modelo
+      jobs;//ids de videos do modelo na api do YouTube
+  // ========================================================================== //
 
-
-  // variaveis globais
-  var itemsCount;
-
-  // MODAL
+  // === MODAL ================================================================ //
   // primeiro inicializamos a modal chamando a função de modal do materializecss
+  $(".modal").modal({
 
-  // console.log("Primeiro, inicializamos a modal e alguns comportamentos");
- $(".modal").modal({
-
-    //quando a modal abre chamamaos as funções para criar os embeds do youtube com Lazyload
+    // === FUNÇÃO DE INICIALIZAÇÃO DA MODAL =================================== //
+    // Função chamada quando a modal é aberta
     ready: function(){
 
-      // $(".modal-caro").resize();
-      // console.log("Para cada trabalho criar um player Lazyload do youtube");
-      // embed verdadeiro
+      $(".loading-animation").removeClass('hide');
+      // ==== CRIAÇÃO DOS PLAYERS LAZYLOAD DO YOUTUBE ========================= //
+      // Chamada da função - encontrada em youtubeEmbed.js -  que adiciona os
+      // comportamentos dos players.
+
+      // carrossel grande
       $(".youtube").each(function(index, el) {
         youtubeEmbed($(this));
-      });
+      }); //final da iteração pelos
 
-      // console.log("Para cada trabalho criar thumbnail do vídeo");
-      //thumbnails no carrosel de navegação por miniaturas
+      // carrossel pequenos
       $(".youtube-thumbnail").each(function(index, el) {
         youtubeThumb($(this));
       });
+      // ====================================================================== //
 
+      // === INICIALIZAÇÃO DOS CARROSEIS ====================================== //
+      // Inicialização dos carrosseis com fotos e jobs do modelo clickado
 
-        $(".modal-caro")
-        .slick({
-          asNavFor: ".modal-caro-nav",
-          slidesToShow: 1,
-          fade: true,
-          speed:750,
-          ease:"ease-out",
-          lazyLoad: 'progressive',
-          nextArrow: "<div id='slider-next-arrow' class=' slider-arrow col animated slideInRight s1 hide-on-med-and-down'><i class='material-icons large'>chevron_right</i></div> <!-- final da seta de próximo -->",
-          prevArrow: "  <div id='slider-prev-arrow' class='slider-arrow animated slideInLeft col s1 hide-on-med-and-down'><i class='material-icons large'>chevron_left</i></div><!-- final da seta de anterior -->",
-          responsive: [
-            {
-              breakpoint: 992,
-              settings: {
-                dots: true,
-                fade: false,
-              }
-            },
-          ]
-        });
+      // === CARROSSEL PRINCIPAL =============================================== //
+      $(".carrossel-principal").slick({
+        asNavFor: ".carrossel-nav", // sincronização com o outro slider
+        slidesToShow: 1, // número de sliders mostrados
+        fade: true, // efeito de fadeIn/fadeOut do slider
+        speed:750, // velocidade
+        ease:"ease-out", // tipo de animação
+        lazyLoad: 'progressive', // carragemento lazyLoad, carrega todas as imagens quando o slider é aberto
+        nextArrow: "<div id='slider-next-arrow' class=' slider-arrow col animated slideInRight s1 hide-on-med-and-down'><i class='material-icons large'>chevron_right</i></div> <!-- final da seta de próximo -->", //seta da próximo
+        prevArrow: "  <div id='slider-prev-arrow' class='slider-arrow animated slideInLeft col s1 hide-on-med-and-down'><i class='material-icons large'>chevron_left</i></div><!-- final da seta de anterior -->", //seta de anterior
+        //mudanças para mobile
+        responsive: [
+          {
+            breakpoint: 992, //ponto de quebra
+            settings: {
+              dots: true, //adcionamos os pontos para navegação
+              fade: false, //tiramos o fade
+            }
+          },
+        ]
+      });
+      // === CARROSSEL DE NAVEGAÇÃO =========================================== //
+      $(".carrossel-nav").slick({
 
-        // carrosel de navegação
-        $(".modal-caro-nav").slick({
-          asNavFor: '.modal-caro',
-          centerPadding: '20px',
-          slidesToShow: slidesNumber,
-          focusOnSelect: true,
-          lazyLoad: 'progressive',
-          centerMode: true,
-          arrows: false,
-          ease:'ease-out',
-          speed:500,
-        });
-      //adcionamos a altura calculada e inicializamos o carrosel
-      // setTimeout(function(){
-      // carrosel real
+        asNavFor: '.carrossel-principal', //sincronização com carrosel principal
+        centerPadding: '20px', // padding que separa as fotos
+        slidesToShow: slidesNumber, // numero de slides a mostrar calculado anteriormente
+        focusOnSelect: true, // navegação com click
+        lazyLoad: 'progressive', // carragemento das imagens com LazyLoad assim quando da criação do carrosel
+        centerMode: true, // centralização da foto em foco
+        arrows: false, // desligamento das setas
+        ease:'ease-out', // tipo de animação
+        speed:500, // velocidade de animação
+      });
 
-    },
+    }, // final da função de inicialização da modal
+    // ======================================================================== //
 
-   // excluimos o conteudo e escondemos o botão de fechar a modal
+    // === FUNÇÃO DE FECHAMENTO DA MODAL ====================================== //
+    // Função chamada quando a modal é fechada
     complete: function(){
 
       //removemos as medidas do modelo e removemos o nome do modelo
       $(".measure, .carousel-title, .casting-modal-profile img").remove();
-      // limpamos a div do carrosel e tiramos a classe initialized para
+
+      // limpamos a div do carrossel e tiramos a classe initialized para
       // pode inicializar a modal de novo
-      $(".modal-caro, .modal-caro-nav").addClass('transparent').empty().removeClass('slick-initialized slick-slider');
+      $(".carrossel-principal, .carrossel-nav").addClass('transparent').empty().removeClass('slick-initialized slick-slider');
 
-      // console.log("modal fechada");
-    }
-  });//final da função de modal
+    }, // final da função de fechamento da modal
+    // ======================================================================== //
+  }); //final da função de modal
+  // ========================================================================== //
 
-  // console.log(".modal");
-  //
-  // console.log("para cada link vamos criar um comportamentos");
-  //agora vamos controlar comportamentos para os links da modal
+  // === GALERIA DE FOTOS ===================================================== //
+  // Galeria de fotos dos modelos com troca de cor no hover e link para modal
+  // com medidas, fotos e vídeos de trabalos
   $(".casting_link").each(function(index, el) { // para cada link
 
-    // console.log("adcionamos comportamentos de hover");
-    // HOVER
-    // quando o mouse entra removemos a classe com o filtro preto e branco
+    // === HOVER DOS ITEMS ==================================================== //
+    // Quando o mouse entra removemos a classe com o filtro preto e branco de cada
+    // item da galeria
     $(this).mouseenter(function(event) {
       $(this).removeClass('bw');
-      // console.log("mouse passou por cima");
-
     })
     // quando o mouse sai adcionamos a classe novamente
     .mouseleave(function(event) {
       $(this).addClass('bw');
-      // console.log("mouse saiu do item");
     });
 
-    // CLICK
-    // agora vamos controlar o evento de clcik para adcionar os dados, inicializar
-    // o carousel e mostrar os elementos com animações do animate.css
-    // console.log("adcionamos comportamentos click");
+
+    // === CLICK DOS ITEMS ==================================================== //
+    // Agora vamos controlar o evento de clcik para adcionar os dados indexado
+    // pelos atributos de data-binding e concatenalos no HTML correto para depois
+    // inicializar a modal
     $(this).click(function(event) { // quando os links são clickados
 
       event.preventDefault(); // o comportamento padrão é cortado
 
-      // console.log("Primeiro colhemos os valores de data-binding do item");
-      // vamos agora guardar os dados do modelos clickado em uma variável
-      var photoCount = Number($(this).attr("data-photos")), //número de fotos
-          id = $(this).attr("data-id"), //o id do modelo
-          category = $(this).attr("data-category"), //categoria do modelo
-          name = $(this).attr("data-name"), //nome do modelo
-          measure = $(this).attr("data-measure"), //medidas do modelo
-          jobs = $(this).attr("data-jobs").split(",");   //ids de videos do modelo na api do YouTube
+      // === DATA BIDING ====================================================== /
+      // vamos agora guardar os dados do modelos clickado em variaeis
+      // contagem de fotos
+      photoCount = Number($(this).attr("data-photos")); //número de fotos
+
+      // id do modelo
+      id = $(this).attr("data-id"); //o id do modelo
+
+      // categoria do modelo
+      category = $(this).attr("data-category"); //categoria do modelo
+
+      // nome do modelo
+      name =  "<h2 class='carousel-title animated center-align fadeInDown' style='animation-delay:0.65s;'>" + $(this).attr("data-name")  + "</h2>";//nome do modelo
+
+      //medidas do modelo
+      measure = "<div class='measure center-align' ><p class='animated fadeInUp style='animation-delay:0.75s'>" + $(this).attr("data-measure") + "</p></div>";
+
+
+      // videos de jobs do modelo
+      jobs = $(this).attr("data-jobs").split(",");   //ids de videos do modelo na api do YouTube
 
           if (jobs[0] !== "") {
 
@@ -133,80 +174,8 @@ $(document).ready(function() {
               itemsCount = photoCount;
           }
 
-      // redefinimos a variavel de nome concatenando-a com string de html
-      name = "<h2 class='carousel-title animated  fadeInDown' style='animation-delay:0.65s'>" + name + "</h2>";
-
-      //inicializamos a variável do carousel
-      var carouselImg = "";
-
-      // para cada uma das fotos do photoCount concatenamos a variavél do carousel
-      // com uma string de item do carousel
-      for (var i = 0; i < photoCount; i++) {
-        carouselImg += "<div class=''>" +
-                        "<img class='slider-img transparent' data-lazy='img/" + category  + "/" + id + "/" + (i+1) + ".jpg'>" +
-                       "</div>";
-      } // final do for
-
-
-
-      // criamos o markup dos jobs
-      var carouselNav = "";
-      var modalCaro = "";
-
-      if ( jobs.length > 1 ) { // hack para estrutura do array porque o consumo
-                              //dos dados não tem verificação e então quando
-                              // não há jobs ele renderizaria um player sem vídeo
-        $(jobs).each(function(index,value){
-
-          // carrosel real
-          modalCaro += "<div class='yt-slider-container-wrap transparent'>" +
-                        "<div class='yt-slider-container' style=''>" +
-                          "<div class='yt-container' style='opacity:1'>" +
-                            "<div class='youtube' data-embed='" + jobs[index] + "'>" +
-                              "<div class='play-button'></div>" +
-                            "</div>" +
-                          "</div>" +
-                        "</div>" +
-                      "</div>";
-
-          // // carrosel de navegação (os jobs são apenas fotos)
-          carouselNav += "<div class='yt-slider-container-wrap transparent'>" +
-                              "<div class='yt-slider-container yt-slider-nav-container' style=''>" +
-                                "<div class='yt-container' style='opacity:1'>" +
-                                  "<div class='youtube-thumbnail' data-embed='" + jobs[index] + "'>" +
-                                    "<div class='play-button'></div>" +
-                                  "</div>" +
-                                "</div>" +
-                              "</div>" +
-                            "</div>";
-        });
-      }
-
-      // redefinimos a variável de medidas com a string html da medida
-      measure = "<div class='measure'><h4>Medidas</h4><p class='animated fadeInUp style='animation-delay:0.75s'>" + measure + "</p></div>";
-
-      // adcionamos o título ao div de conteúdo da modal
-      $(".modal-content").prepend(name);
-
-      // adcionamos o carossel a sua div
-      $(".modal-caro").append(
-        carouselImg + modalCaro
-      );
-
-      // adcionamos o carrosel de navegação em sua div
-      $(".modal-caro-nav").append(
-        carouselImg + carouselNav
-      );
-
-      // adcionamos a foto do perfil
-      $(".casting-modal-profile").append(
-        "<img src='img/" + category + "/" + id + ".jpg'class='responsive-img animated fadeIn' style='animation-delay:0.5s;'>"
-      );
-
-      // var slidesNumber = 0;
       // calculo do numero de miniaturas
       if ( itemsCount <= 5 )  {
-        // slidesNumber = photoCount - 1;
         switch (itemsCount) {
           case 1:
             slidesNumber = 1;
@@ -228,7 +197,6 @@ $(document).ready(function() {
             break;
 
           default:
-          // slidesNumber = 1;
 
         }
       } else {
@@ -236,125 +204,249 @@ $(document).ready(function() {
         slidesNumber = 5;
       }
 
+
+      // final do data biding
+      // ====================================================================== //
+
+
+      // === CARROSEL ========================================================= //
+      // Aqui criamos o html do CARROSEL em loops separados entre as imagens e
+      // os jobs em vídep
+
+      //inicializamos a variável do carousel
+      var carouselImg = "";
+
+      // para cada uma das fotos do photoCount concatenamos a variavél do carousel
+      // com uma string de item do carousel
+      for (var i = 0; i < photoCount; i++) {
+        carouselImg += "<div class=''>" +
+                        "<img class='slider-img transparent' data-lazy='img/" + category  + "/" + id + "/" + (i+1) + ".jpg'>" +
+                       "</div>";
+      } // final do for
+
+      // criamos o markup dos jobs
+      var carouselNav = "";
+      var modalCaro = "";
+
+      if ( jobs.length > 1 ) { // hack para estrutura do array porque o consumo
+                              //dos dados não tem verificação e então quando
+                              // não há jobs ele renderizaria um player sem vídeo
+        $(jobs).each(function(index,value){
+
+          // carrossel real
+          modalCaro += "<div class='yt-slider-container-wrap transparent'>" +
+                        "<div class='yt-slider-container' style=''>" +
+                          "<div class='yt-container' style='opacity:1'>" +
+                            "<div class='youtube' data-embed='" + jobs[index] + "'>" +
+                              "<div class='play-button'></div>" +
+                            "</div>" +
+                          "</div>" +
+                        "</div>" +
+                      "</div>";
+
+          // // carrossel de navegação (os jobs são apenas fotos)
+          carouselNav += "<div class='yt-slider-container-wrap transparent'>" +
+                              "<div class='yt-slider-container yt-slider-nav-container' style=''>" +
+                                "<div class='yt-container' style='opacity:1'>" +
+                                  "<div class='youtube-thumbnail' data-embed='" + jobs[index] + "'>" +
+                                    "<div class='play-button'></div>" +
+                                  "</div>" +
+                                "</div>" +
+                              "</div>" +
+                            "</div>";
+        });
+      }
+      // final da criação dos carroseis
+      // =====================================================================  //
+
+      // === ADCIONANDO AS INFORMAÇÕES A MODAL ================================ //
+      // Agora adcionamos as informações que colhemos e manipulamos dentro da modal
+      // com funções do jquery
+
+      // adcionamos o título ao div de conteúdo da modal
+      $(".modal-content").prepend(name);
+
+      // adcionamos o carossel a sua div
+      $(".carrossel-principal").append(
+        carouselImg + modalCaro
+      );
+
+      // adcionamos o carrossel de navegação em sua div
+      $(".carrossel-nav").append(
+        carouselImg + carouselNav
+      );
+
+      // adcionamos a foto do perfil
+      $(".casting-modal-profile").append(
+        "<img src='img/" + category + "/" + id + ".jpg'class='responsive-img animated fadeIn' style='animation-delay:0.5s;'>"
+      );
+
+      // adcinamos as mediadas
       $(".casting-modal-profile").append(measure);
-
-      $(".modal-caro").on("lazyLoaded", function(slick){
-
-        // agora vamos realizar cálculos para posicionar os itens do carrossel
-        var itemWidth = $(".modal-caro .slick-slide", modal).width(),//a largura de cada item do carrossel
-            itemHeight = $(".modal-caro .slick-slide", modal).height(); //a altura de cada item do carrossel
+    //========================================================================= //
 
 
-        $(".modal-caro .slider-img", $(modal)).each(function(index){
+      // === ABERTURA DA MODAL ================================================ //
+      // Chamada para o método open da modal já com o conteúdo incluso
+      $(".modal").modal("open"); // abrir modal
+      // ====================================================================== //
 
-          // guardamos a largura da imagem em uma variável
-          var imgWidth = $(this).width(),
-              imgHeight = $(this).height();
-
-          // se a largura da imagem for maior que zero, ou seja,
-          // se a imagem não tiver problemas com a chamada http e
-          // já tiver sido renderizada
+    }); // Final da função ligada ao click de cada iten da galeria de modelos
+    // ======================================================================== //
 
 
-          // se a imagem tiver a altura maior que a largura, ou seja, tiver orietação retrato
-          if ( imgHeight > imgWidth ) {
+    // === FUNÇÃO DE POSICIONAMENTO DO carrossel PRINCIPAL =================== //
+    // Redefine variaveis de tamanho do slide, colhe o tamanho das fotos e
+    // compara os valores. Fotos  retrato recebem um classe e são
+    // centralizdas horizontalmente. Fotos em paisagem e players recebem outra e são
+    // centralizadas verticalmente.
+    $(".carrossel-principal").on("lazyLoaded", function(slick){
 
-            // console.log("photo orientation is portrait");
-            // adcionamos o css de retrato, que basicamente, é 95% da altura,
-            // largura automatica e vazando um pouco pra cima
-            $(this).addClass('carousel-img-portrait');
+      // agora vamos realizar cálculos para posicionar os itens do carrossel
+      itemWidth = $(".carrossel-principal .slick-slide", modal).width();//a largura de cada item do carrossel
+      itemHeight = $(".carrossel-principal .slick-slide", modal).height(); //a altura de cada item do carrossel
 
-            //atualizamos as variaveis de tamanho para o tamanho atual da imagem, ocupando todo o slider
-            imgWidth = $(this).width();
-            imgHeight = $(this).height();
-
-
-          }  else if (
-            // se a largura da imagem for maior que a altura, ou seja,
-            // a imagem tiver orietação paisagem, e se a tela for menor que 992px,
-            // ou seja, for de um dispositivo móvel
-            imgWidth > imgHeight && windowWidth < 992 && imgWidth > 0
-          ) {
-
-            // console.log("photo orientation is landscape");
-            // centralizamos a imagem verticalmente
-            $(this).css({"margin-top" : ( itemHeight - imgHeight )/2 }).addClass('carousel-img-landscape');
-          }
-
-          if ( imgWidth > 0 ) {
-            $(this).css({"margin-left" : ( itemWidth - imgWidth ) / 2 }); //centralizamos a imagem colocando como posição à esquerda como metada da largura do item do carrosel
-          }
-
-        }); //final da função each das imagens do carrosel
-
-
-      });
-
-      $(".modal-caro-nav").on("lazyLoaded", function(slick){
-      //agora vamos realizar cálculos para posicionar os itens do carrossel
-      itemWidth = $(".modal-caro-nav .slick-slide", modal).width(); //a largura de cada item do carrossel
-      itemHeight = $(".modal-caro-nav .slick-slide", modal).height(); //a altura de cada item do carrossel
-
-      // console.log("modal aberta");
-
-
-      $(".modal-caro-nav .slider-img, .modal-caro-nav .yt-slider-nav-container", $(modal)).each(function(index){
+      // === POSICIONAMENTO DAS IMAGENS ======================================= /
+      $(".carrossel-principal .slider-img", $(modal)).each(function(index){
 
         // guardamos a largura da imagem em uma variável
-        var imgWidth = $(this).width(),
-            imgHeight = $(this).height();
+        contentWidth = $(this).width();
+        contentHeight = $(this).height();
 
-        // se a largura da imagem for maior que zero, ou seja,
-        // se a imagem não tiver problemas com a chamada http e
-        // já tiver sido renderizada
+        //  === IMAGENS RETRATO =============================================== /
+        // Se a imagem tiver a altura maior que a largura, ou seja, tiver
+        // orietação retrato ela recebe uma classe e é centralizada horizontalmente
+        if ( contentHeight > contentWidth ) {
 
-        // se a imagem tiver a altura maior que a largura, ou seja, tiver orietação retrato
-        if ( imgHeight > imgWidth ) {
-
-          // console.log("photo orientation is portrait");
           // adcionamos o css de retrato, que basicamente, é 95% da altura,
           // largura automatica e vazando um pouco pra cima
           $(this).addClass('carousel-img-portrait');
 
+          //centralizamos a imagem colocando como posição à esquerda como metada da largura do item do carrose
+          $(this).css({"margin-left" : ( itemWidth - contentWidth ) / 2 });
+
           //atualizamos as variaveis de tamanho para o tamanho atual da imagem, ocupando todo o slider
-          imgWidth = $(this).width();
-          imgHeight = $(this).height();
+          contentWidth = $(this).width();
+          contentHeight = $(this).height();
+        }//final do if das imagens retrato
+        // ================================================================== //
 
-
-        }  else if (
+        // === IMAGENS PAISAGEM ============================================= //
+        // Se a imagem tiver a largura maior que a altura , ou seja, tiver
+        // orietação retrato ela recebe uma classe e é centralizada verticalmente
+        else if (
           // se a largura da imagem for maior que a altura, ou seja,
           // a imagem tiver orietação paisagem, e se a tela for menor que 992px,
           // ou seja, for de um dispositivo móvel
-          imgWidth > imgHeight && windowWidth < 992 && imgWidth > 0
+          contentWidth > contentHeight
         ) {
-
-          // console.log("photo orientation is landscape");
           // centralizamos a imagem verticalmente
-          $(this).css({"top" : ( itemHeight - imgHeight )/ 2 }).addClass('carousel-img-landscape');
-        }
+          $(this).css({"margin-top" : ( itemHeight - contentHeight )/2 }).addClass('carousel-img-landscape');
 
-        if ( imgWidth > 0 ) {
-          $(this).css({"margin-left" : ( itemWidth - imgWidth ) / 2 }); //centralizamos a imagem colocando como posição à esquerda como metada da largura do item do carrosel
-        }
+          //centralizamos a imagem colocando como posição à esquerda como metada da largura do item do carrose
+          $(this).css({"margin-left" : ( itemWidth - contentWidth ) / 2 });
 
-      }); //final da função each das imagens do carrosel
+        } //final do else if das imagens paisagem
+        //===================================================================== //
+      }); //final da função each das imagens do carrossel
+      // ==================================================================== //
+    }); // final da função de posicionamento do carrossel principal
+    // ====================================================================== //
 
-        $(".modal-caro-nav, .modal-caro").addClass('fadeIn').removeClass('transparent');
+    // === FUNÇÃO DE POSICIONAMENTO DAS FOTOS DO CARROSEL DE NAVEGAÇÃO ====== //
+    // Redefine variaveis de tamanho do slide, colhe o tamanho das fotos e
+    // compara os valores. Fotos  retrato recebem um classe e são
+    // centralizdas horizontalmente. Fotos em paisagem e players recebem outra e são
+    // centralizadas verticalmente.
+    $(".carrossel-nav").on("lazyLoaded", function(slick){
 
 
-    });
+    //agora vamos realizar cálculos para posicionar os itens do carrossel
+    itemWidth = $(".carrossel-nav .slick-slide", modal).width(); //a largura de cada item do carrossel
+    itemHeight = $(".carrossel-nav .slick-slide", modal).height(); //a altura de cada item do carrossel
 
-      //abrimos a modal
-      $(".modal").modal("open");
+    // === POSICIONAMENTO DAS IMAGENS DA NAVEGAÇÃO =============== //
+      // Iteração pelas imagen do carrossel de navegação que colhe
+      // a altura da imagem, compara com a altura dos slides desse carrossel e
+      // centraliza o player verticalmente
+      $(".carrossel-nav .slider-img", $(modal)).each(function(index){
 
-      //sincronizamos o comportamento do botão de fechamento com a modal
-      $(".modal-close").click(function(event) {
-        // $(this).addClass('hide');
-        $(".modal").modal("close");
-      });
-    });
-  });
-});
+        // Guardamos largura e altura de uma imagem das imagens da modal
+         contentWidth = $(this).width(); // largura da imagem
+        contentHeight = $(this).height(); // altura da imagem
+
+        // === IMAGENS RETRATO ============================================== //
+        // Se a imagem tiver a altura maior que a largura, ou seja, tiver
+        // orietação retrato ela recebe uma classe e é centralizada horizontalmente
+        if ( contentHeight > contentWidth ) {
+          // adcionamos o css de retrato, que basicamente, é 95% da altura,
+          // largura automatica e vazando um pouco pra cima
+          $(this).addClass('carousel-img-portrait');
+          //centralizamos a imagem colocando como posição à esquerda como metada da largura do item do carrose
+          $(this).css({"margin-left" : ( itemWidth - contentWidth ) / 2 });
+        } //final do if das imagens retrato
+        // ================================================================== //
+
+        // === IMAGENS PAISAGEM ============================================= //
+        // Se a imagem tiver a largura maior que a altura , ou seja, tiver
+        // orietação retrato ela recebe uma classe e é centralizada verticalmente
+         else if (
+          // se a largura da imagem for maior que a altura, ou seja,
+          // a imagem tiver orietação paisagem, e se a tela for menor que 992px,
+          // ou seja, for de um dispositivo móvel
+          contentWidth > contentHeight && windowWidth < 992 && contentWidth > 0
+        ) {
+          // centralizamos a imagem verticalmente
+          $(this).css({"margin-top" : ( itemHeight - contentHeight )/ 2 });
+        } //final do else if das imagens paisagem
+        //=================================================================== //
+
+      }); //final da função each das imagens do carrossel de navegação
+      // ==================================================================== //
+
+      // === POSICIONAMENTO DOS PLAYERS DE VIDEO DA NAVEGAÇÃO =============== //
+      // Iteração pelos players de video do carrossel de navegação que colhe
+      // a altura do player, compara com a altura dos slides desse carrossel e
+      // centraliza o player verticalmente
+      $(".carrossel-nav .yt-slider-nav-container").each(function(index, el) {
+        contentHeight = $(this).height(); // colhemos a altura do player
+        $(this).css({
+          "margin-top" : ( itemHeight - contentHeight )/ 2 // comparamos com o valor
+                                                          // do slider e centralizamos
+                                                          // com uma margem superiror
+        });//final do método css para cada player de vídeo
+      }); // final da função que posiciona os players de vídeo do carrossel de navegação
+      // ==================================================================== //
+
+
+      // === MOSTRANDO OS CARROSEIS ========================================= //
+      // Já com as fotos posicionadas, adcionamos a classe de fadeIn do animate.css
+      // e removemos a classe de transparência para que os carroseis sejam renderizados
+      $(".carrossel-nav, .carrossel-principal") // nos sliders
+        .addClass('fadeIn') // adcionamos o fadeIn
+        .removeClass('transparent'); //removemos a transparência
+
+        setTimeout(function(){
+          $(".loading-animation").addClass('hide');
+        },2000);
+      // ==================================================================== //
+
+    }); // Final da função ligada ao carregamento do carrossel de navegação
+    // ====================================================================== //
+
+
+    // === CLICK MODAL CLOSE ================================================ //
+    // Função que ligada ao click do botão que chama o metodo de fechar a modal
+    $(".modal-close").click(function(event) {
+      $(".modal").modal("close"); // fechar modal
+    }); // Final da função ligada ao click do botão de fechar a modal
+    // ====================================================================== //
+
+  }); // Final iteração pelos itens da galeria de modelos
+  // ========================================================================== //
+
+}); // Final da função document ready
+// =========================================
 
 $(document).ready(function() {
 
@@ -999,6 +1091,186 @@ $(document).ready(function() {
   });
 });
 
+$(document).ready(function(){
+  // === MISSÃO, VISÃO, VALORES =============================================== //
+  // === INICIALIZAÇÃO DAS TABS =============================================== //
+  // Inicilizamos as tabs do plugin de tabs do materializecss
+  // (http://materializecss.com/tabs.html ) com a opção de arrastar (touch)
+  $(".institucional ul.tabs").tabs({
+    swipeable: true, //opção de arrastar
+  }); //final da inicização das tabs
+  // ========================================================================== //
+  // ========================================================================== //
+
+  // === GALERIA DE IMAGEM ==================================================== //
+  // === CARROSEL DE FOTOS DA ESTRUTURA ======================================= //
+  // Carrosel do plugin jquery slick ( http://kenwheeler.github.io/slick/ )
+  // tem seus comportamentos padrão desligados e a navegação feita pelas miniaturas
+  // em telas maiores que 992px e um comportamento normal de slider
+
+  // === SLICK CARROSEL ======================================================= //
+  // Inicialização do carrosel
+  $(".carrossel-estrutura").slick({
+    // === CONFIGURAÇÕES PADRÃO =============================================== //
+    arrows:false, // removemos as setas
+    adaptiveHeight: true,
+    // speed: 500,
+    slidesToShow: 1,
+    slidesToScroll:1,
+    dots:false, // removemos os pontos
+    fade:true, //adiconamos o efeito de fade
+    // lazyLoad: 'progressive', // definimos que imagens que não são a primeira serão
+                            // carregadas quando o carrosel for iniciado
+    draggable: false, // cortamos a navegação arrastando (touch)
+    // ======================================================================== //
+    // === CONFIGURAÇÕES MOBILE ==============================================  //
+    responsive: [
+      {
+        breakpoint: 992, //ponto de quebra
+        // configurações mobile
+        settings: {
+          dots: true, // adcionamos os pontos para navegação
+          fade: false, // tiramos o fade
+          draggable: true, // adcionamos o comportamento de navegação arrastando
+        }  // final do objeto de configuração
+      }, // final do objeto dentro do array de configurações responsivas
+    ] // final das configurações mobile
+    // ======================================================================== //
+  });// final da inicialização do slick
+  // ========================================================================== //
+
+  // === NAVEGAÇÃO POR MINITURAS ============================================== //
+  // Para cada um dos itens da miniatura nos adiconamos um função ao evento de click
+  // que foca o carrosel no item com index correspondente ao da minitura na matriz
+  // de miniaturas da classe .image-gallery-item dentro do DOM através do método
+  // slickGoTo() do slick carrosel
+  $(".imagem-miniatura-navegacao").each(function(index, el) {
+    $(this).click(function(event){
+      // paramos o evento padrão
+      event.preventDefault();
+      $(".carrossel-estrutura").slick("slickGoTo", index ); // mudança do item
+                                                            // em foco no carrosel
+                                                            // em função index da
+                                                            // miniatura
+    }); // final da função ligada ao click das miniaturas
+  }); // final da iteração pelas miniaturas
+  // ========================================================================== //
+
+
+  // // === MATERIALBOX =============================================== //
+  //  Adciona o compormaneto de material box do plugin material box
+  // (http://materializecss.com/media.html) do materializecss  para o item em
+  // destaque após adcionar a classe em que ela depende. Isso faz com que
+  // possamos clicar e abrir a imagem em uma modal se a tela for maior que 992px
+
+  if( windowWidth > 992 ){
+    $(".institucional .carrossel-estrutura-item img").addClass('materialboxed').materialbox();
+  } //final do if
+  // ========================================================================== //
+
+  // ========================================================================== //
+
+  // === OPINIÃO DE QUEM É FORUM ============================================== //
+  // Modal chamada quando um dos itens da galeria é clickado. É adicionado um iframe
+  // lazyLoad com o código do vídeo. Quando ela é fechada a div de conteúdo é esvaziada
+
+  // === MODAL ================================================================ //
+  $("#modal-depoimentos").modal({
+    // === FUNÇÃO DE FECHAMENTO DA MODAL ====================================== //
+    // Quando a modal é fechada a div de conteúdo é esvaziada
+    complete:function(){
+      $(".modal-content").empty();
+    }// findal da função lançada quando a modal é fechada
+  }); // Final da modal
+  // ========================================================================== //
+
+  // === ITENS DA GALERIA ===================================================== //
+
+  $(".galeria-depoimentos-item").each(function(index) {
+    // === CLICK DOS ITENS DA GALERIA ========================================= //
+    // Quando os itens são clickados é adicionado a modal o markup do iframe
+    // lazyLoad com os dados do vídeo e o nome do modelo, é criado o iframe e
+    // a modal é aberta
+    $(this).click(function(event) {
+      /* Act on the event */
+      event.preventDefault();
+
+      // adcionamos o html do player com o nome do modelo e o código do vídeo
+      $(".modal-content").append(
+        '<h2 class="animated fadeInDown white-text center-align">' + $(this).attr("data-name") + '</h2>' +
+        ' <div class="yt-container-wrapper">' +
+          '<div class="yt-container animated">'+
+            '<div class="youtube" data-embed="' + $(this).attr("data-embed") + '">'+
+             ' <div class="play-button"></div>'+
+            '</div>'+
+          '</div>'+
+        '</div>'
+      );
+
+      // Criamos o player de vídeo
+      youtubeEmbed($(".youtube"));
+
+      // Abrimos a modal
+      $("#modal-depoimentos").modal("open");
+
+    }); // final do click
+    // ======================================================================== //
+  }); // final da iteração pelos items da galeria de depoimentos
+  // ========================================================================== //
+
+  // === PARCEIROS ============================================================ //
+  // Carrossel em autoplay com logos de parceiros
+  // === INICIALIZAÇÃO DO CARROSSEL =========================================== //
+  $(".carrossel-parceiros").slick({
+    slidesToShow:1,
+    slidesToScroll:1,
+    dots:true,
+    autoplay:true,
+    autoplaySpeed:750,
+  }); // final da função de inicialização do carrossel
+  // ========================================================================== //
+  // ========================================================================== //
+
+  // === FEEDBACK ============================================================= //
+  // Slider com breves depoimentos de celebridades e influenciadores parceiros
+  // da Forum Model e Forum School. Pode conter texto e imagem ou ainda um link
+  // para vídeo que se abre na modal. Usa o plugin Slider do materializecss com
+  // documentação disponível em: http://materializecss.com/media.html
+
+  // === INICIALIZAÇÃO DO SLIDER ============================================== //
+  // $('.slider').slider();
+  // $(".slider").slider("pause");
+
+  $(".slider-feedback-slide-link").click(function(event) {
+    /* Act on the event */
+    event.preventDefault();
+
+    $(".modal-content").append(
+      '<h2 class="animated fadeInDown white-text center-align">' + $(this).attr("data-name") + '</h2>' +
+      ' <div class="yt-container-wrapper">' +
+        '<div class="yt-container animated">'+
+          '<div class="youtube" data-embed="' + $(this).attr("data-embed") + '">'+
+           ' <div class="play-button"></div>'+
+          '</div>'+
+        '</div>'+
+      '</div>'
+    );
+
+    // Criamos o player de vídeo
+    youtubeEmbed($(".youtube"));
+
+    // Abrimos a modal
+    $("#modal-depoimentos").modal("open");
+
+
+  });
+  // ========================================================================== //
+  // ========================================================================== //
+
+
+}); // final da doc ready fn
+// ======================================== ==================================== //
+
 (function ($) {
   $.extend({
     uploadPreview : function (options) {
@@ -1077,18 +1349,6 @@ $(document).ready(function() {
   });
 })(jQuery);
 
-$(document).ready(function() {
-
-  // setTimeout(function(){
-  //
-  //     $("#load-animation").removeClass('loading');
-  //     $("body").removeClass('hide');
-  //
-  //
-  // },3000);
-
-});
-
 // MENU
 //console.log("***MENU***");
 $(document).ready(function(){
@@ -1153,169 +1413,153 @@ $(document).ready(function(){
 });//end of doc ready fn
 //console.log("***END OF MENU***");
 
-// 
-//
-// $(document).ready(function() {
-//
-//   $('.modal').modal({});
-//
-//   $('#modal1').modal('open');
-//
-//   $("#popup").trigger('click');
-//
-//     $(".modalClose").click(function(event) {
-//       event.preventDefault();
-//       $('#modal1').modal('close');
-//       $(this).hide();
-//       $("#popup").remove();
-//     });
-//
-//     $('.modal-overlay').click(function(event) {
-//       $(".modalClose").trigger('click');
-//     });
-//
-// });
-
 $(document).ready(function(){
   //console.log("***PAGE ANIMATIONS");
   //if the its the index page
-  if( name === "index.php" || name === "") {
-    $("nav").addClass("animated fadeInDown").css({"z-index":"2"});
-    // .animateCss("fadeInDown"); //hive nav and add fadeInDown
-    console.log($("nav"));
-    $("body").addClass("fadeIn").removeClass("hide"); //add fadeIn to body and show it
-    $(".tabs").css({"overflow":"hidden"}); //hide overflow for animation
-    $(".custom-icon").addClass("hide animated fadeIn"); //hide and add fadeIn animation to custom-icon icons
-    $(".tabs .left").addClass("animated fadeInLeft"); //animate left tabs to show from the left
-    $(".tabs .right").addClass("animated fadeInRight"); //animte right tabs to show from the right
-    $(".brand-logo-img").addClass("animated fadeIn"); //animate logo to fade in
-    $("nav").removeClass("hide"); //show nav to animate it and it's childs
-    $(".custom-icon").each(function (index) { //show custom-icons slightly one after another
-      $(this).removeClass("hide");
+  $(".loading-animation").removeClass('hide');
+
+  setTimeout(function(){
+
+    $(".loading-animation").addClass('hide');
+
+    if( name === "index.php" || name === "") {
+      $("nav").addClass("animated fadeInDown").css({"z-index":"2"});
+      // .animateCss("fadeInDown"); //hive nav and add fadeInDown
+      console.log($("nav"));
+      $("body").addClass("fadeIn").removeClass("hide"); //add fadeIn to body and show it
+      $(".tabs").css({"overflow":"hidden"}); //hide overflow for animation
+      $(".custom-icon").addClass("hide animated fadeIn"); //hide and add fadeIn animation to custom-icon icons
+      $(".tabs .left").addClass("animated fadeInLeft"); //animate left tabs to show from the left
+      $(".tabs .right").addClass("animated fadeInRight"); //animte right tabs to show from the right
+      $(".brand-logo-img").addClass("animated fadeIn"); //animate logo to fade in
+      $("nav").removeClass("hide"); //show nav to animate it and it's childs
+      $(".custom-icon").each(function (index) { //show custom-icons slightly one after another
+        $(this).removeClass("hide");
+      });
+      $("#nav-mobile-socialLinks").removeClass('hide');
+
+
+
+      //going to site pages animation
+      $("a").click(function (ev) { //when clicking links
+        //console.log("***navigate from index animation click***");
+        ev.preventDefault(); //preventDefault
+        var href = $(this).attr("href"); //console.log("the href is: " + href); // assign the href to a variable
+        var target = $(this).attr("target"); //console.log("the target is: " + target); //assing the target to a variable
+
+        if(href !== "#menu") {    //if the link href is not empity, as in the menu icon from materialize framework
+          if(target !== "_blank") { //if the target is not _black to open in new window
+            $("body").addClass("fadeOutDown"); //fadeOutDown the body
+            setTimeout(function(){ //timout to change the href as the animateCss function still has no callback
+              $(location).attr("href", href);
+            },750);
+          } else {// if the target is blank, to open in new window
+            window.open(href,"_blank"); //open a new window with the href
+          } //end of if else
+        } //end of if
+        //console.log("***navigate from index animation click***");
+      });
+
+      // $(".animated").each(function(){
+      //   $.fn.extend({
+      //     animateCss: function (animationName, callback) {
+      //       var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+      //       $(this).one(animationEnd, function() {
+      //           $(this).removeClass('animated ' + animationName);
+      //       });
+      //     },
+      //   });
+      // });
+      //
+      //remover classes de animação para garantir comportamento normal
+      setTimeout(function(){
+        $("body").removeClass('fadeIn');
+        $(".custom-icon").removeClass('fadeIn');
+        $("nav").removeClass('fadeInDown');
+        $(".tabs .left").removeClass('fadeInLeft');
+        $(".tabs .right").removeClass('fadeInRight');
+        $("#nav-mobile-socialLinks").removeClass('fadeIn');
+      },2000);
+
+    } else {
+
+      //onLoad casting-gallery animation
+      var i = 1; //initialize a counter variable
+      //
+      // $(".casting-gallery-item, .yt-container").each(function(index){ //for each casting-gallery-item
+      //
+      //   $(this).css({ "animation-delay" : i/4 + "s" }); //add a delay longer as one quarter of the counter
+      //   i++; //add to counter
+      //
+      // }); //animate  casting-gallery-itens
+
+      $("nav").addClass("animated fadeInDown");
+      $("body").addClass("fadeIn").removeClass("hide"); //add fadeIn to body and show it
+      $(".tabs").css({"overflow":"hidden"}); //hide overflow for animation
+      $(".custom-icon").addClass("hide animated fadeIn"); //hide and add fadeIn animation to custom-icon icons
+      $(".tabs .left").addClass("animated fadeInLeft"); //animate left tabs to show from the left
+      $(".tabs .right").addClass("animated fadeInRight"); //animte right tabs to show from the right
+      $(".brand-logo").addClass("animated fadeIn"); //animate logo to fade in
+      $("nav").removeClass("hide"); //show nav to animate it and it's childs
+      $("#nav-mobile-socialLinks").removeClass('hide');
+    // //  container animation for standart page load
+      $(".casting-title, .portfolio-title").removeClass('hide');
+      $(".container").removeClass('hide');
+
+      $(".custom-icon").each(function (index) { //show custom-icons slightly one after another
+        $(this).removeClass("hide");
+      });
+      // $(".yt-container").removeClass('fadeInUp'); //remove animation class from yt container
+
+
+      //remover classes de animação para garantir comportamento normal
+      setTimeout(function(){
+        $("body").removeClass('fadeIn');
+        $(".custom-icon").removeClass('fadeIn');
+        $("nav").removeClass('fadeInDown');
+        $(".tabs .left").removeClass('fadeInLeft');
+        $(".tabs .right").removeClass('fadeInRight');
+        $("#nav-mobile-socialLinks").removeClass('fadeIn');
+      },2000);
+
+
+
+    } //end of if else
+
+    // SCROLLMAGIC
+
+    var controller = new ScrollMagic.Controller();
+
+    $(".casting-gallery-item").each(function(index) {
+
+      var scene = new ScrollMagic.Scene({
+        triggerElement: this,
+        reverse:false,
+        triggerHook:0.8 ,
+        offset:"-50%",
+      })
+        .setClassToggle(this, "fadeInUp")
+        // .addIndicators()
+        .addTo(controller);
     });
-    $("#nav-mobile-socialLinks").removeClass('hide');
 
+    $(".yt-container").each(function(index) {
 
-
-    //going to site pages animation
-    $("a").click(function (ev) { //when clicking links
-      //console.log("***navigate from index animation click***");
-      ev.preventDefault(); //preventDefault
-      var href = $(this).attr("href"); //console.log("the href is: " + href); // assign the href to a variable
-      var target = $(this).attr("target"); //console.log("the target is: " + target); //assing the target to a variable
-
-      if(href !== "#menu") {    //if the link href is not empity, as in the menu icon from materialize framework
-        if(target !== "_blank") { //if the target is not _black to open in new window
-          $("body").addClass("fadeOutDown"); //fadeOutDown the body
-          setTimeout(function(){ //timout to change the href as the animateCss function still has no callback
-            $(location).attr("href", href);
-          },750);
-        } else {// if the target is blank, to open in new window
-          window.open(href,"_blank"); //open a new window with the href
-        } //end of if else
-      } //end of if
-      //console.log("***navigate from index animation click***");
+      var scene = new ScrollMagic.Scene({
+        triggerElement: this,
+        reverse:false,
+        triggerHook:0.8 ,
+        offset:"-50%",
+      })
+        .setClassToggle(this, "fadeInUp")
+        // .addIndicators()
+        .addTo(controller);
     });
 
-    // $(".animated").each(function(){
-    //   $.fn.extend({
-    //     animateCss: function (animationName, callback) {
-    //       var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-    //       $(this).one(animationEnd, function() {
-    //           $(this).removeClass('animated ' + animationName);
-    //       });
-    //     },
-    //   });
-    // });
-    //
-    //remover classes de animação para garantir comportamento normal
-    setTimeout(function(){
-      $("body").removeClass('fadeIn');
-      $(".custom-icon").removeClass('fadeIn');
-      $("nav").removeClass('fadeInDown');
-      $(".tabs .left").removeClass('fadeInLeft');
-      $(".tabs .right").removeClass('fadeInRight');
-      $("#nav-mobile-socialLinks").removeClass('fadeIn');
-    },2000);
-
-  } else {
-
-    //onLoad casting-gallery animation
-    var i = 1; //initialize a counter variable
-    //
-    // $(".casting-gallery-item, .yt-container").each(function(index){ //for each casting-gallery-item
-    //
-    //   $(this).css({ "animation-delay" : i/4 + "s" }); //add a delay longer as one quarter of the counter
-    //   i++; //add to counter
-    //
-    // }); //animate  casting-gallery-itens
-
-    $("nav").addClass("animated fadeInDown");
-    $("body").addClass("fadeIn").removeClass("hide"); //add fadeIn to body and show it
-    $(".tabs").css({"overflow":"hidden"}); //hide overflow for animation
-    $(".custom-icon").addClass("hide animated fadeIn"); //hide and add fadeIn animation to custom-icon icons
-    $(".tabs .left").addClass("animated fadeInLeft"); //animate left tabs to show from the left
-    $(".tabs .right").addClass("animated fadeInRight"); //animte right tabs to show from the right
-    $(".brand-logo").addClass("animated fadeIn"); //animate logo to fade in
-    $("nav").removeClass("hide"); //show nav to animate it and it's childs
-    $("#nav-mobile-socialLinks").removeClass('hide');
-  // //  container animation for standart page load
-    $(".casting-title, .portfolio-title").removeClass('hide');
-    $(".container").removeClass('hide');
-
-    $(".custom-icon").each(function (index) { //show custom-icons slightly one after another
-      $(this).removeClass("hide");
-    });
-    // $(".yt-container").removeClass('fadeInUp'); //remove animation class from yt container
-
-
-    //remover classes de animação para garantir comportamento normal
-    setTimeout(function(){
-      $("body").removeClass('fadeIn');
-      $(".custom-icon").removeClass('fadeIn');
-      $("nav").removeClass('fadeInDown');
-      $(".tabs .left").removeClass('fadeInLeft');
-      $(".tabs .right").removeClass('fadeInRight');
-      $("#nav-mobile-socialLinks").removeClass('fadeIn');
-    },2000);
 
 
 
-  } //end of if else
-
-  // SCROLLMAGIC
-
-  var controller = new ScrollMagic.Controller();
-
-  $(".casting-gallery-item").each(function(index) {
-
-    var scene = new ScrollMagic.Scene({
-      triggerElement: this,
-      reverse:false,
-      triggerHook:0.8 ,
-      offset:"-50%",
-    })
-      .setClassToggle(this, "fadeInUp")
-      // .addIndicators()
-      .addTo(controller);
-  });
-
-  $(".yt-container").each(function(index) {
-
-    var scene = new ScrollMagic.Scene({
-      triggerElement: this,
-      reverse:false,
-      triggerHook:0.8 ,
-      offset:"-50%",
-    })
-      .setClassToggle(this, "fadeInUp")
-      // .addIndicators()
-      .addTo(controller);
-  });
-
-
-
-
+  },2000);
   //console.log("***PAGE ANIMATIONS");
 }); //end of doc ready fn
 

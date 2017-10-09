@@ -1,0 +1,12 @@
+Altura:
+1,83	
+Manequim:
+36	
+Busto:
+86
+Cintura:
+64	
+Quadril:
+94	
+Sapato:
+39

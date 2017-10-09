@@ -18,11 +18,28 @@
 				4,
 
 				//medidas
-				"Altura: 1,85	<br/> Manequim: 40 <br/> Sapato: 43",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,85
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					40
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					43
+					</li>
+				</ul>",
 
 				//ids dos jobs na api do YouTube separados por vírgula
 				// nome dos jobs em ordem
-				"i92zZBo-VW4,M8SmpZ7LzjQ,8C2BZjvGqwQ,3Ie95l9Yp6g",
+				"",
 
 			),
 
@@ -30,14 +47,66 @@
   		"2"=>array(
 				"Elizabeth F.",
 				4 ,
-				"Altura: 1,70 <br />Manequim: 38	<br /> Busto: 88 <br />Cintura: 65	<br />Quadril: 90	<br />Sapato: 38",
-				""
+					"<ul>
+						<li>
+						<span class='medida'>Altura</span><br/>
+						1,76
+						</li>
+					</ul>
+					<ul>
+						<li>
+						<span class='medida'>Manequim</span><br/>
+						38
+						</li>
+					</ul>
+					<ul>
+						<li>
+						<span class='medida'>Busto</span><br/>
+						88
+						</li>
+					</ul>
+					<ul>
+						<li>
+						<span class='medida'>Cintura</span><br/>
+						65
+						</li>
+					</ul>
+					<ul>
+						<li>
+						<span class='medida'>Quadril</span><br/>
+						90
+						</li>
+					</ul>
+					<ul>
+						<li>
+						<span class='medida'>Sapato</span><br/>
+						38
+						</li>
+					</ul>",
+					""
 			),
 
   		//3
   		"3"=>array("Flavio R.",
 			2,
-			 "Altura: 1,76	<br />Manequim: 42 <br />Sapato: 41",
+			"<ul>
+				<li>
+				<span class='medida'>Altura</span><br/>
+				1,76
+				</li>
+			</ul>
+			<ul>
+				<li>
+				<span class='medida'>Manequim</span><br/>
+				42
+				</li>
+			</ul>
+			<ul>
+				<li>
+				<span class='medida'>Sapato</span><br/>
+				41
+				</li>
+				</ul>",
 			 ""
 		 ),
 
@@ -45,7 +114,43 @@
   		"4"=>array(
 				"Claribel S. ",
 				4,
-				"Altura: 1,69	<br />Manequim: 42 <br />Busto: 98 <br />Cintura: 82 <br />	Quadril: 104	<br />Sapato:38",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,69
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					42
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					98
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					82
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					104
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					38
+					</li>
+				</ul>",
+
 				""
 			),
 
@@ -53,7 +158,24 @@
   		"5"=>array(
 				"Sandra M. ",
 				3,
-				"Altura: 1,78	<br />Manequim:  46 <br />	Sapato: 40",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,78
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					46
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					40
+					</li>
+				</ul>",
 				""
 			),
 
@@ -61,7 +183,18 @@
   		"6"=>array(
 				"Arnaldo C. ",
 				3,
-				"Altura: 1,82 <br />Sapato: 42",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,82
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					42
+					</li>
+				</ul>",
 				""
 			),
 
@@ -69,7 +202,42 @@
   		"7"=>array(
 				"Valeria C. ",
 				3,
-				"Altura: 1,72 <br />Manequim: 40 <br />Busto: 91 <br />Cintura: 77 <br />Quadril: 105	<br />Sapato: 39",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,72
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					40
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					91
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					77
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					105
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					39
+					</li>
+				</ul>",
 				""
 			),
 
@@ -77,7 +245,42 @@
   		"8"=>array(
 				"Rosalind J. ",
 				4,
-				"Altura: 1,50 <br />	Manequim: 44 <br />Busto: 83 <br />Cintura: 69 <br />	Quadril: 96 <br />Sapato:35",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,50
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					44
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					83
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					69
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					96
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					35
+					</li>
+				</ul>",
 				""
 			),
 
@@ -85,7 +288,42 @@
   		"9"=>array(
 				"Marta C. ",
 				3,
-				"Altura: 1,68 <br />	Manequim: 40 <br />	Busto: 92 <br />Cintura: 77 <br />Quadril: 97 <br />	Sapato: 40",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,68
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					40
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					92
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					77
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					97
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					40
+					</li>
+				</ul>",
 				""
 			),
 
@@ -93,7 +331,42 @@
   		"10"=>array(
 				"Mirian M.",
 				2,
-				"Altura:1,67 <br />Manequim:38	<br />Busto:89 Cintura:75 <br />Quadril:93	<br />Sapato:36",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,67
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					38
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					89
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					75
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					93
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					36
+					</li>
+				</ul>",
 				""
 			),
 
@@ -101,7 +374,24 @@
   		"11"=>array(
 				"Maria C.",
 				3,
-				"Altura:1,68 <br />	Manequim:44 <br />	Quadril:0 <br />	Sapato:36",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,68
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					44
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					36
+					</li>
+				</ul>",
 				""
 			),
 
@@ -109,7 +399,42 @@
   		"12"=>array(
 				"Monica T.",
 				5,
-				"Altura: 1,75 <br />Manequim: 38 <br />Busto: 86 <br />Cintura: 58 <br />Quadril: 91 <br />Sapato: 37",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,75
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					38
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					86
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					58
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					91
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					37
+					</li>
+				</ul>",
 				""
 			),
 
@@ -117,7 +442,24 @@
   		"13"=>array(
 				"Suely M.",
 				2,
-				"Altura:1,52 <br />	Manequim:40 <br />Sapato:33",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,52
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					40
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					33
+					</li>
+				</ul>",
 				""
 			),
 
@@ -125,7 +467,42 @@
   		"14"=>array(
 				"Lucia S.",
 				3,
-				"Altura:1,71 <br />	Manequim:48 <br />	Busto:109 <br />Cintura:94 <br />	Quadril:109 <br />	Sapato:3",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,71
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					48
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					109
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					94
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					109
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					38
+					</li>
+				</ul>",
 				""
 			),
 
@@ -133,7 +510,42 @@
   		"15"=>array(
 				"Divangela M.",
 				4,
-				"Altura: 1,69 <br />Manequim: 36 <br />Busto: 80 <br />Cintura: 60 <br />Quadril: 88 <br />Sapato: 38",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,69
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					36
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					80
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					60
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					88
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					38
+					</li>
+				</ul>",
 				""
 			),
 
@@ -141,7 +553,61 @@
   		"16"=>array(
 				"Rosemeri B. ",
 				3,
-				"Altura:1,62 <br />	Manequim:40 <br />Cintura:0 <br />	Quadril:0 <br />	Sapato:37",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,62
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					40
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					37
+					</li>
+				</ul>",
+				""
+			),
+
+			//16
+			"17"=>array(
+				"Eliane S. ",
+				4,
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,70
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					38
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					62
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					96
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					36
+					</li>
+				</ul>",
 				""
 			),
     ),
@@ -151,29 +617,109 @@
       //1
       "1"=>array("Gabiela A.",
 			6,
-			"Altura: 1,72	<br />Manequim: 36	<br />Busto: 73 <br />Cintura: 57	<br />Quadril: 82	<br />Sapato: 39",
+			"<ul>
+				<li>
+				<span class='medida'>Altura</span><br/>
+				1,72
+				</li>
+			</ul>
+			<ul>
+				<li>
+				<span class='medida'>Manequim</span><br/>
+				36
+				</li>
+			</ul>
+			<ul>
+				<li>
+				<span class='medida'>Busto</span><br/>
+				73
+				</li>
+			</ul>
+			<ul>
+				<li>
+				<span class='medida'>Cintura</span><br/>
+				57
+				</li>
+			</ul>
+			<ul>
+				<li>
+				<span class='medida'>Quadril</span><br/>
+				82
+				</li>
+			</ul>
+			<ul>
+				<li>
+				<span class='medida'>Sapato</span><br/>
+				39
+				</li>
+			</ul>",
 			""
 		),
       //2
       "2"=>array(
 				"Valkiria S.",
 				4,
-				"Altura: 1,57 <br />	Manequim: 38 <br />	Busto: 87 <br />Cintura: 69 <br />	Quadril: 95 <br />	Sapato: 35",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,57
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					38
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					87
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					69
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					95
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					35
+					</li>
+				</ul>",
 				""
 			),
-
-      //3
-      "3"=>array("Marina T.",
-			4,
-			"Altura: 1,80 <br />	Manequim: 40 <br />	Busto: 84 <br /> Cintura: 69 <br />Quadril: 100 <br />Sapato: 39",
-			""
-		),
 
       //4
       "4"=>array(
 				"Michel L.",
 				3,
-				"Altura: 1,89 <br />Manequim: 44 <br />Sapato: 43",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,89
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					44
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					43
+					</li>
+				</ul>",
 				""
 			),
 
@@ -181,51 +727,251 @@
       "5"=>array(
 				"Matheus C.",
 				5,
-				"Altura: 0,87 <br />Manequim: 3",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,87
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					38
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					86
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					58
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					91
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					37
+					</li>
+				</ul>",
 				""
 			),
 
       //6
       "6"=>array("Sarah L.",
 			5,
-			"Altura: 1,65	<br />Manequim: 38	<br />Busto: 84 <br />Cintura: 67	<br />Quadril: 92	<br />Sapato: 38",
+			"<ul>
+				<li>
+				<span class='medida'>Altura</span><br/>
+				1,65
+				</li>
+			</ul>
+			<ul>
+				<li>
+				<span class='medida'>Manequim</span><br/>
+				38
+				</li>
+			</ul>
+			<ul>
+				<li>
+				<span class='medida'>Busto</span><br/>
+				84
+				</li>
+			</ul>
+			<ul>
+				<li>
+				<span class='medida'>Cintura</span><br/>
+				67
+				</li>
+			</ul>
+			<ul>
+				<li>
+				<span class='medida'>Quadril</span><br/>
+				92
+				</li>
+			</ul>
+			<ul>
+				<li>
+				<span class='medida'>Sapato</span><br/>
+				38
+				</li>
+			</ul>",
 			""
 		),
 
-      //7
-      "7"=>array(
-				"Carlos E.",
-				4,
-				"Altura: 1,70	Manequim: 38	Sapato: 39",
-				""
-			),
+    //7
+    "7"=>array(
+			"Carlos E.",
+			4,
+			"<ul>
+				<li>
+				<span class='medida'>Altura</span><br/>
+				1,70
+				</li>
+			</ul>
+			<ul>
+				<li>
+				<span class='medida'>Manequim</span><br/>
+				38
+				</li>
+			</ul>
+
+			<ul>
+				<li>
+				<span class='medida'>Sapato</span><br/>
+				39
+				</li>
+			</ul>",
+			""
+		),
 
       //8
       "8"=>array("Ketelyn C.",
 			4,
-			"Altura: 1,56 <br />Manequim: 36 <br />Busto: 83 <br />Cintura: 93	<br />Quadril: 95	<br />Sapato: 35",
+			"<ul>
+				<li>
+				<span class='medida'>Altura</span><br/>
+				1,65
+				</li>
+			</ul>
+			<ul>
+				<li>
+				<span class='medida'>Manequim</span><br/>
+				36
+				</li>
+			</ul>
+			<ul>
+				<li>
+				<span class='medida'>Busto</span><br/>
+				83
+				</li>
+			</ul>
+			<ul>
+				<li>
+				<span class='medida'>Cintura</span><br/>
+				93
+				</li>
+			</ul>
+			<ul>
+				<li>
+				<span class='medida'>Quadril</span><br/>
+				95
+				</li>
+			</ul>
+			<ul>
+				<li>
+				<span class='medida'>Sapato</span><br/>
+				35
+				</li>
+			</ul>",
 			""
 		),
       //9
       "9"=>array("Rafael O.",
 			4,
-			"Altura:1,79	<br />Manequim:38 <br />Quadril:77	<br />Sapato:41",
+			"<ul>
+				<li>
+				<span class='medida'>Altura</span><br/>
+				1,79
+				</li>
+			</ul>
+			<ul>
+				<li>
+				<span class='medida'>Manequim</span><br/>
+				38
+				</li>
+			</ul>
+			<ul>
+				<li>
+				<span class='medida'>Quadril</span><br/>
+				77
+				</li>
+			</ul>
+			<ul>
+				<li>
+				<span class='medida'>Sapato</span><br/>
+				41
+				</li>
+			</ul>",
 			""
 		),
 
-      //10
-      "10"=>array(
-				"Alexia G.",
-				4,
-				"Altura:1,63 <br />	Manequim:38 <br />	Sapato:36",
-				""
-			),
+    //10
+    "10"=>array(
+			"Alexia G.",
+			4,
+			"<ul>
+				<li>
+				<span class='medida'>Altura</span><br/>
+				1,63
+				</li>
+			</ul>
+			<ul>
+				<li>
+				<span class='medida'>Manequim</span><br/>
+				38
+				</li>
+			</ul>
+			<ul>
+			<ul>
+				<li>
+				<span class='medida'>Sapato</span><br/>
+				36
+				</li>
+			</ul>",
+			""
+		),
 
       //11
       "11"=>array(
 				"Daiara C.",
 				3,
-				"Altura:1,62	Manequim:36	<br />Busto:84 <br />Cintura:65	<br />Quadril:92 <br />Sapato:35",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,62
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					36
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					84
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					65
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					92
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					35
+					</li>
+				</ul>",
+
 				""
 			),
 
@@ -233,7 +979,24 @@
       "12"=>array(
 				"Gilton C.",
 				5,
-				"Altura: 1,84	<br />Manequim: 42	<br />Sapato: 42",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,84
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					42
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					42
+					</li>
+				</ul>",
 				""
 			),
 
@@ -241,7 +1004,42 @@
       "13"=>array(
 				"Gabriela C.",
 				5,
-				"Altura: 1,73 <br />	Manequim: 36 <br />	Busto: 86 <br />Cintura: 60 <br />	Quadril: 87 <br />	Sapato: 37",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,73
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					36
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					86
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					60
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					87
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					37
+					</li>
+				</ul>",
 				""
 			),
 
@@ -249,7 +1047,24 @@
       "14"=>array(
 				"Marcos P.",
 				4,
-				"Altura: 1,81 <br />	Manequim: 38 <br />Sapato: 41",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,81
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					38
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					41
+					</li>
+				</ul>",
 				""
 			),
 
@@ -257,7 +1072,24 @@
       "15"=>array(
 				"Emmanoel S.",
 				5,
-				"Altura: 1,85 <br />	Manequim: 38 <br />Sapato: 44",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,85
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					38
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					44
+					</li>
+				</ul>",
 				""
 			),
 
@@ -265,7 +1097,18 @@
       "16"=>array(
 				"Ana L.",
 				5,
-				"Altura: 1,56 <br />	Sapato: 34",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,65
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					34
+					</li>
+				</ul>",
 				""
 			),
 
@@ -273,7 +1116,42 @@
       "17"=>array(
 				"Gelca R.",
 				3,
-				"Altura: 1,70 <br />	Manequim: 38 <br />	Busto: 92 <br />Cintura: 68 <br />	Quadril: 97 <br />	Sapato: 36",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,70
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					38
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					92
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					68
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					97
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					36
+					</li>
+				</ul>",
 				""
 			),
 
@@ -281,7 +1159,24 @@
       "18"=>array(
 				"Diego L.",
 				3,
-				"Altura: 1,85	<br />Manequim: 38 <br />Sapato: 43",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,85
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					38
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					43
+					</li>
+				</ul>",
 				""
 			),
 
@@ -289,7 +1184,24 @@
       "19"=>array(
 				"Felipe B.",
 				5,
-				"Altura: 1,77 <br />Manequim: 38 <br />Sapato:42",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,77
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					38
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					42
+					</li>
+				</ul>",
 				""
 			),
 
@@ -297,7 +1209,24 @@
       "20"=>array(
 				"Carlos E.",
 				4,
-				"Altura: 1,72 <br />	Manequim: 38 <br />Sapato: 39",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,72
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					38
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					39
+					</li>
+				</ul>",
 				""
 			),
 
@@ -305,49 +1234,374 @@
       "21"=>array(
 				"Gabi A.",
 				5,
-				"Altura: 1,73	<br />Manequim: 34	<br />Busto: 74 <br />Cintura: 61 <br />Quadril: 90	<br />Sapato: 37",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,73
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					34
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					74
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					61
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					90
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					37
+					</li>
+				</ul>",
 				""
 			),
 
+
+
       //22
       "22"=>array(
-				"Gabi R.",
-				5,
-				"Altura:1,73 <br />	Manequim:36 <br />	Busto:86 <br />Cintura:60 <br />	Quadril:87 <br />Sapato:37",
+				"Julia B.",
+				10,
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,74
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					38
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					87
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					69
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					101
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					37
+					</li>
+				</ul>",
 				""
 			),
 
       //23
       "23"=>array(
-				"Julia B.",
-				10,
-				"ltura: 1,74	<br />Manequim: 38	<br />Busto: 87 <br />Cintura: 69	<br />Quadril: 101	<br />Sapato: 37",
+				"Maria B.",
+				5,
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,79
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					40
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					85
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					70
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					99
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					40
+					</li>
+				</ul>",
 				""
 			),
 
       //24
       "24"=>array(
-				"Maria B.",
-				5,
-				"Altura: 1,79	<br />Manequim: 40 <br />	Busto: 85 <br />Cintura: 70	<br />Quadril: 99 <br />	Sapato: 40",
+				"Rafaela V.",
+				4,
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,63
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					36
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					75
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					58
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					86
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					37
+					</li>
+				</ul>",
 				""
 			),
 
       //25
       "25"=>array(
-				"Rafaela V.",
-				4,
-				"Altura: 1,63	<br />Manequim: 36	<br />Busto: 75 <br />Cintura: 58	<br />Quadril: 86	<br />Sapato: 37" ,
+				"Renata G.",
+				3,
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,76
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					38
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					37
+					</li>
+				</ul>",
 				""
 			),
 
-      //26
-      "26"=>array(
-				"Renata G.",
+			//26
+			"26"=>array(
+				"Ana X.",
 				3,
-				"Altura:1,76 <br />	Manequim:38	 <br />Sapato:37",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,65
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					34
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					74
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					57
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					87
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					35
+					</li>
+				</ul>",
 				""
 			),
+
+			//27
+			"27"=>array(
+				"Bruna S.",
+				9,
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,70
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					36
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					90
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					62
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					90
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					36
+					</li>
+				</ul>",
+				""
+			),
+
+			//28
+			"28"=>array(
+				"Victoria C",
+				4,
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,70
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					38
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					89
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					66
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					98
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					38
+					</li>
+				</ul>",
+				""
+			),
+
+			//29
+			"29"=>array(
+				"Marina S.",
+				4,
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,61
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					36
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					83
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					68
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					97
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					36
+					</li>
+				</ul>",
+				""
+			),
+
+
     ),
 
     "feminino" => array(
@@ -355,24 +1609,43 @@
 			//1
 			"1"=>array(
 				"Julia P.",
-				8,
-				"Altura: 1,75 <br />	Manequim: 36 <br />Busto: 88 <br />Cintura: 63 <br />	Quadril: 91	<br />Sapato: 37",
-				""
-			),
-
-			//2
-			"2"=>array(
-				"Larissa P.",
-				8,
-				"Altura: 1,73	<br />Manequim: 36	<br />Busto: 78 <br />Cintura: 62 <br />	Quadril: 94	<br />Sapato: 39",
-				""
-			),
-
-			//3
-			"3"=>array(
-				"Dulce",
-				4,
-				"Altura: 1,76	<br />Manequim: 36 <br />Sapato: 38",
+				10,
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,75
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					36
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					88
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					63
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					91
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					37
+					</li>
+				</ul>",
 				""
 			),
 
@@ -380,15 +1653,85 @@
 			"4"=>array(
 				"Leticia C.",
 				12,
-				"Altura: 1,77	<br />Manequim: 38	<br />Busto: 82 <br />Cintura: 68	<br />Quadril: 97	<br />Sapato: 38",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,77
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					38
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					82
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					68
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					97
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					38
+					</li>
+				</ul>",
 				""
 			),
 
 			//5
 			"5"=>array(
 				"Emily M.",
-				12,
-				"Altura: 1,85 <br />	Manequim: 36	<br />Busto: 81 <br />Cintura: 60	<br />Quadril: 87	<br />Sapato: 37",
+				8,
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,80
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					36
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					81
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					60
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					87
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					37
+					</li>
+				</ul>",
 				""
 			),
 
@@ -396,95 +1739,173 @@
 			"6"=>array(
 				"Francyne M.",
 				13,
-				"Altura: 1,77 <br />	Manequim: 36 <br />Busto: 86 <br />Cintura: 63	<br />Quadril: 90 <br />	Sapato: 38",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,77
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					36
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					86
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					63
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					90
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					38
+					</li>
+				</ul>",
 				""
 			),
 
-			//7
-			"7"=>array(
-				"Gabi A.",
-				5,
-				"Altura: 1,73	<br />Manequim: 34	<br />Busto: 74 <br />Cintura: 61 <br />Quadril: 90	<br />Sapato: 37",
-				""
-			),
-
-			//8
-			"8"=>array(
-				"Gabi S.",
-				5,
-				"Altura: 1,77	<br />Manequim: 36	<br />Busto: 82 <br />Cintura: 61	<br />Quadril: 91	<br />Sapato: 37",
-				""
-			),
-
-			//9
-			"9"=>array(
-				"Gabi T.",
-				3,
-				"Altura:1,78	<br />Manequim:38 <br />	Busto:65 <br />Cintura:65	<br />Quadril:93	<br />Sapato:38",
-				""
-			),
-
-			//10
-			"10"=>array(
-				"Gaby V.",
-				 12,
-				"Altura: 1,74	<br />Manequim: 36	<br />Busto: 79 <br />Cintura: 61	<br />Quadril: 90	<br />Sapato: 37",
-				""
-			 ),
-
-			//11
-			"11"=>array(
-				"Isabely Y.",
-				9,
-				"Altura: 1,75 <br />	Manequim: 34 <br />Busto: 74 <br />Cintura: 62	<br />Quadril: 86	<br />Sapato: 38",
-				""
-			),
 
 			//12
 			"12"=>array(
 				"Julia G.",
-				11,
-				"Altura:  1,79 <br />Manequim: 36 <br />	Busto: 87  <br />Cintura: 61 <br />	Quadril:  88 <br />	Sapato: 37",
+				8,
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,79
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					36
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					87
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					61
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					88
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					37
+					</li>
+				</ul>",
 				""
 			),
 
 			//13
 			"13"=>array(
 				"Ana L.",
-				3,
-				"Altura: 1,79 <br />	Manequim: 38 <br />	Busto: 80 <br />Cintura: 61 <br />	Quadril: 92 <br />	Sapato: 37",
-				""
-			),
-
-			//14
-			"14"=>array(
-				"Claire S.",
-				6,
-				"Altura: 1,72	<br />Manequim: 38 <br />Busto: 85 <br />Cintura: 69 <br />Quadril: 98 <br />Sapato: 38",
-				""
-			),
-
-			//15
-			"15"=>array(
-				"Laysla L.",
-				3,
-				"Altura: 1,77	<br />Manequim: 38	<br />Busto: 86 <br />Cintura: 66	<br />Quadril: 94	<br />Sapato: 37",
-				""
-			),
-
-			//16
-			"16"=>array(
-				"Emanuely D.",
 				5,
-				"Altura: 1,76 <br />	Manequim: 34	<br />Busto: 78 <br />Cintura: 58	<br />Quadril: 85 <br />Sapato: 37",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,79
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					38
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					80
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					61
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					92
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					37
+					</li>
+				</ul>",
 				""
 			),
+
 
 			//17
 			"17"=>array(
 				"Nicolle I.",
 				10,
-				"Altura: 1,74 <br />	Manequim: 36	<br />Busto: 76 <br />Cintura: 62 <br />Quadril: 92	<br />Sapato: 38",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,74
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					36
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					76
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					62
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					92
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					38
+					</li>
+				</ul>",
 				""
 			),
 
@@ -492,9 +1913,262 @@
 			"18"=>array(
 				"Tharyne Z.",
 				6,
-				"Altura: 1,75	<br />Manequim: 36	<br />Busto: 81 <br />Cintura: 64	<br />Quadril: 92 <br />	Sapato: 37",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,75
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					36
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					81
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					64
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					92
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					37
+					</li>
+				</ul>",
 				""
 			),
+
+			//19
+			"19"=>array(
+				"Alexia S.",
+				7,
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,79
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					38
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					85
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					65
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					92
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					39
+					</li>
+				</ul>",
+				""
+			),
+
+			//20
+			"20"=>array(
+				"Camila J.",
+				9,
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,83
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					36
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					86
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					64
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					94
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					39
+					</li>
+				</ul>",
+				""
+			),
+
+			//21
+			"21"=>array(
+				"Laura B.",
+				4,
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,76
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					36
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					80
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					69
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					93
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					37
+					</li>
+				</ul>",
+				""
+			),
+
+			//22
+			"22"=>array(
+				"Malu F.",
+				5,
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,78
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					36
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					77
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					62
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					91
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					37
+					</li>
+				</ul>",
+				""
+			),
+
+			//23
+			"23"=>array(
+				"Thabata E.",
+				8,
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,72
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					34
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					84
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					64
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					87
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					38
+					</li>
+				</ul>",
+				""
+			),
+
+
+
 		),
 
     "masculino" => array(
@@ -502,39 +2176,114 @@
   		"1"=>array(
 				"Daniel A.",
 				13,
-				"Altura: 1,83 <br />Manequim: 38 <br />Busto: 91 <br />Cintura: 48 <br />Quadril: 95 ",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,83
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					38
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					91
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					48
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					95
+					</li>
+				</ul>",
+
 				""
 			),
 
-			//2
-			"2"=>array(
-				"Evandro M.",
-				5,
-				"Altura: 1,85 <br />Manequim: 40 <br />Sapato: 42  <br />Torax: 92",
-				""
-			),
+
 
 			//3
 			"3"=>array(
 				"Fabricio B.",
 				11,
-				"Altura: 1,88	<br />Manequim: 38	<br />Busto: 87 <br />Cintura: 42	<br />	Sapato: 42",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,88
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					38
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					87
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					42
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					42
+					</li>
+				</ul>",
 				""
 			),
 
-			//4
-			"4"=>array(
-				"Jhonatan T.",
-				7,
-				"Altura: 1,89	<br />Manequim: 38 <br />Busto: 91 <br />Cintura: 44 <br />Sapato: 41",
-				""
-			),
 
 			//5
 			"5"=>array(
 				"Leo P.",
 				12,
-				"Altura:1,93	<br />Manequim:42	<br />Busto:96 <br />Cintura: 48	<br />Sapato: 42",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,93
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					42
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					96
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					48
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					42
+					</li>
+				</ul>",
 				""
 			),
 
@@ -542,7 +2291,36 @@
 			"6"=>array(
 				"Lucas G.",
 				13,
-				"Altura: 1,94 <br />Manequim: 44 <br />Busto: 98 <br />Cintura:50 <br />Sapato: 43",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,94
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					44
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					98
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					50
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					43
+					</li>
+				</ul>",
 				""
 			),
 
@@ -550,7 +2328,24 @@
 			"7"=>array(
 				"Pedro S.",
 				2,
-				"Altura: 1,86	<br />Manequim: 40 <br />Sapato: 43",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,86
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					40
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					43
+					</li>
+				</ul>",
 				""
 			),
 
@@ -558,49 +2353,189 @@
 			"8"=>array(
 				"Ygor N.",
 				3,
-				"Altura: 1,85	<br />Manequim: 38	<br />Sapato: 40",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,85
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					38
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					40
+					</li>
+				</ul>",
 				""
 			),
 
 			//9
 			"9"=>array(
-				"Jessie B.",
-				6,
-				"Altura: 1,89 <br />Manequim: 38	<br />Busto: 87 <br />Cintura: 73 <br />	Quadril: 93	<br />Sapato: 42",
+				"Danilo G.",
+				9,
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,85
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					38
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					40
+					</li>
+				</ul>",
 				""
 			),
 
-			//10
 			"10"=>array(
-				"André M.",
-				7,
-				"Altura: 1,89	<br />Manequim:40	<br />Busto: 90 <br />Cintura: 44	<br />Sapato:42",
+				"Lucas M.",
+				5,
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,85
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					40
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					93
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					46
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					99
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					41
+					</li>
+				</ul>",
 				""
 			),
 
-			//11
 			"11"=>array(
-				"Guilherme S.",
-				6,
-				"Altura: 1,86	<br />Manequim: 42 <br />Busto: 95 <br />Sapato: 42",
+				"Lucca S.",
+				9,
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,85
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					40
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					92
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					40
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					92
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					39
+					</li>
+				</ul>",
 				""
 			),
 
-			//10
+
 			"12"=>array(
-				"André M.",
-				7,
-				"Altura: 1,89	<br />Manequim:40	<br />Busto: 90 <br />Cintura: 44	<br />Sapato:42",
+				"Paulo P.",
+				8,
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,83
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					40
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					43
+					</li>
+				</ul>",
 				""
 			),
 
-			//11
+
 			"13"=>array(
-				"Guilherme S.",
-				6,
-				"Altura: 1,86	<br />Manequim: 42 <br />Busto: 95 <br />Sapato: 42",
+				"Phelipe M.",
+				8,
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,92
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					50
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					43
+					</li>
+				</ul>",
 				""
 			),
+
+
+
+
   	),
 
     "kids" => array(
@@ -609,7 +2544,24 @@
       "1"=>array(
 				"Gabriele C.",
 				6,
-				"Altura: 1,17 <br />	Manequim: 5 <br />Sapato: 29",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,71
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					5
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					29
+					</li>
+				</ul>",
 				""
 			),
 
@@ -617,7 +2569,42 @@
       "2"=>array(
 				"Laura T.",
 				4,
-				"Altura: 1,21 <br />	Manequim: 10 <br />	Busto: 57 <br />Cintura: 54 <br />	Quadril: 60 <br />	Sapato: 30",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,21
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					10
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					57
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					54
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					60
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					30
+					</li>
+				</ul>",
 				""
 			),
 
@@ -625,7 +2612,36 @@
       "3"=>array(
 				"Maria A.",
 				5,
-				"Manequim: 8 <br />	Busto: 67 <br />Cintura: 56 <br />	Quadril: 72 <br />	Sapato: 34",
+				"<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					8
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					67
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					56
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					72
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					34
+					</li>
+				</ul>",
 				""
 			),
 
@@ -633,7 +2649,24 @@
       "4"=>array(
 				"Bernardo P.",
 				3,
-				"Altura: 0,62	<br />Manequim: 6 <br />Sapato: 15",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					0,62
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					6
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					15
+					</li>
+				</ul>",
 				""
 			),
 
@@ -641,7 +2674,24 @@
       "5"=>array(
 				"Matheus O.",
 				4,
-				"Altura: 1,44 <br />	Manequim: 12 <br />	Sapato: 35",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,44
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					12
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					35
+					</li>
+				</ul>",
 				""
 			),
 
@@ -649,7 +2699,24 @@
       "6"=>array(
 				"Rafaella P.",
 				4,
-				"Altura: 1,00 <br />	Manequim: 4 <br />	Busto:0 <br />Cintura: 0 <br />	Quadril: 0 <br />	Sapato: 25",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,00
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					4
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					25
+					</li>
+				</ul>",
 				""
 			),
 
@@ -657,7 +2724,24 @@
       "7"=>array(
 				"Julia R.",
 				4,
-				"Altura: 1,10	<br />Manequim: 6	<br />Sapato: 26",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,10
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					6
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					26
+					</li>
+				</ul>",
 				""
 			),
 
@@ -665,7 +2749,24 @@
       "8"=>array(
 				"Yuri N.",
 				5,
-				"Altura: 1,36	<br />Manequim: 10	<br />Sapato: 34",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,36
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					10
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					34
+					</li>
+				</ul>",
 				""
 			),
 
@@ -673,7 +2774,24 @@
       "9"=>array(
 				"André R.",
 				5,
-				"Altura:0,98	<br />Manequim:4 <br />Sapato:25",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					0,98
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					4
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					25
+					</li>
+				</ul>",
 				""
 			),
 
@@ -681,7 +2799,42 @@
       "10"=>array(
 				"Izabella V.",
 				5,
-				"Altura: 1,56	<br />Manequim: 36	<br />Busto: 76 <br />Cintura: 64	<br />Quadril: 82	<br />Sapato: 37" ,
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,56
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					36
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					76
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Cintura</span><br/>
+					64
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Quadril</span><br/>
+					82
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					37
+					</li>
+				</ul>",
 				""
 			),
 
@@ -689,14 +2842,54 @@
       "11"=>array(
 				"Luana C.",
 				4,
-				"Altura: 1,30	<br />Manequim: 10 <br />Sapato: 29" ,
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,30
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					10
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					29
+					</li>
+				</ul>",
 				""),
 
       //12
       "12"=>array(
 				"Lorenzo E.",
 				4,
-				"Altura: 0,98 <br />Manequim: 3 <br />Quadril: 53 <br />Sapato: 23",
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					0,98
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					3
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Busto</span><br/>
+					53
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Sapato</span><br/>
+					23
+					</li>
+				</ul>",
 				""
 			),
 
@@ -704,7 +2897,18 @@
       "13"=>array(
 				"Danilo C.",
 				4,
-				"Altura: 1,26 <br />	Manequim: 10" ,
+				"<ul>
+					<li>
+					<span class='medida'>Altura</span><br/>
+					1,26
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<span class='medida'>Manequim</span><br/>
+					10
+					</li>
+				</ul>",
 				""
 			),
 
@@ -715,6 +2919,7 @@
 
 ?>
 
+
 <!-- botão de fechar a modal -->
 <!-- moodal -->
 <div id="modal" class="modal modal-fixed-footer">
@@ -722,27 +2927,23 @@
   <div class="modal-content">
 		<i class="material-icons large modal-close  animated zoomIn" style="">close</i>
     <div class="row">
+
+			<div class="col s12 l9 casting-modal-content">
+
+
+						<div id="foto-video" class="col s12">
+
+							<!-- carrossel -->
+							<div class="carrossel-principal animated transparent"></div>
+							<div class="carrossel-nav animated transparent hide-on-med-and-down"></div>
+
+						</div>
+
+			</div>
 			<div class="col s12 l3 casting-modal-profile">
 
 			</div>
-			<div class="col s12 l9 casting-modal-content">
 
-				    <div class="col s12">
-				      <ul class="tabs animated fadeIn" style="background-color:black;">
-				        <li class="tab col s12"><a style="color:white;" href="#test1">Fotos & Jobs</a></li>
-				      </ul>
-				    </div>
-
-				    <div id="foto-video" class="col s12">
-						<!-- seta de anterior -->
-
-							<!-- carrossel -->
-							<div class="modal-caro animated transparent"></div>
-							<div class="modal-caro-nav animated transparent hide-on-med-and-down"></div>
-
-				    </div>
-
-			</div>
 
     </div> <!-- final do row -->
   </div> <!-- final da modal-content -->
@@ -782,11 +2983,11 @@
         break;
     }
 		 	$counter = 1;
-			foreach ($category as $modelo) {
+			foreach ($category as $id => $modelo) {
 			?>
 				<div class="col s6 m4 xl4 casting-gallery-item animated" style="opacity:0" >
-					<a class="casting_link bw" href="#modal" data-jobs="<?php echo $modelo[3] ?>" data-photos="<?php echo $modelo[1]?>" data-id="<?php echo $counter?>" data-name="<?php echo $modelo[0]?>" data-category="<?php echo $casting ?>" data-measure="<?php echo $modelo[2]?>">
-						<img src="img/<?php echo $casting ?>/<?php echo $counter?>.jpg" class="responsive-img" alt="">
+					<a class="casting_link bw" href="#modal" data-jobs="<?php echo $modelo[3] ?>" data-photos="<?php echo $modelo[1]?>" data-id="<?php echo $id?>" data-name="<?php echo $modelo[0]?>" data-category="<?php echo $casting ?>" data-measure="<?php echo $modelo[2]?>">
+						<img src="img/<?php echo $casting ?>/<?php echo $id?>.jpg" class="responsive-img" alt="">
 					</a>
 				</div>
 		<?php

@@ -86,13 +86,11 @@
   }
 }
 
-// // garante comportamento mais semantico e trigger para modal fazendo o link
-
-
+// garante comportamento mais semantico e trigger para modal fazendo o link
 
 // ================= modal =====================================================
 .modal{
-  // box-shadow: 0 0 0 rgba(0,0,0,0);
+
   top: 2.5% !important;
   max-height: 95% !important;
   width: 95% !important;
@@ -118,6 +116,9 @@
 
     .casting-modal-profile{
       margin-top: 2.5%;
+      img{
+        width: 100%;
+      }
       @media screen and (min-width: 992px){
         height: 100%;
         margin-top: 0%;
@@ -137,30 +138,39 @@
       @media screen and (max-width: 992px){
         text-align:center;
       }
+      @media screen and (max-width: 600px){
+        font-size: 2.5rem;
+      }
     }
 
     //medidas do modelo
     .measure{
-      @media screen and (max-width: 992px){
-        text-align:center;
-      }
+
       display: inline-block;
       width: 100%;
       margin-top: 20px;
-      @media screen and (min-width: 992px){
-        margin-left: 25%;
-      }
+      line-height: 1.2rem;
+      // @media screen and (min-width: 992px){
+      //   margin-left: 25%;
+      // }
     }
   }
-
-
-
 }
 
 
 
 // ================= carrossel ==========================================
 
+  .slick-dots{
+    bottom: -40px!important;
+    display: flex;
+    justify-content: center;
+    li{
+      width: 5px!important;
+      margin-left: 0 3px!important;
+
+    }
+  }
   .slider-arrow {
     cursor:pointer;
   }
@@ -174,13 +184,11 @@
     cursor: pointer;
   }
 
-  .slick-list,  .slick-track, #foto-video{
+   #foto-video .slick-list,   #foto-video .slick-track, #foto-video{
     height: 100%!important;
     width: 100%;
   }
-  .modal-caro img{
-    // width: 80%;
-    // position: absolute;
+  .carrossel-principal img{
     max-width: 100%;
     max-height: 97.5%;
     margin-top: 1.25%;
@@ -191,7 +199,7 @@
       width: auto;
     }
 
-    .modal-caro{
+    .carrossel-principal{
 
       &:focus{
         border: 0px;
@@ -200,8 +208,7 @@
 
     }
 
-    .modal-caro-nav{
-
+    .carrossel-nav{
       height: 20%!important;
       .slick-slide{
         overflow: hidden;
@@ -212,22 +219,86 @@
       }
     }
 
-  .modal-caro.transparent, .modal-caro-nav.transparent{
+  .carrossel-principal.transparent, .carrossel-nav.transparent{
     opacity: 0!important;
   }
 
-  .modal-caro-nav, .modal-caro{
+  .carrossel-nav, .carrossel-principal{
     animation-delay: 1s;
   }
 
-    // .slick-track, .slick-list{
-    //   width: 100%!important;
-    // }
-// .carousel-slider {
-//   height: 80% !important;
-//   @media screen and (max-width: 700px) {
-//     height: 65% !important;
-//   }
-//
+  .medida {
+    font-weight: bolder;
+    font-size: 1,25rem;
+  }
 
-// }
+  // === LOAD ANIMATION ======================================================= //
+  // Animação de carregamento baixada de https://loading.io/#
+
+  // código prórprio
+  .loading-animation{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    z-index: 9999999999999999;
+    .lds-css{
+      // height: 50%;
+    }
+  }
+
+  //  código do site
+
+  @keyframes lds-rolling {
+	  0% {
+	    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+	    transform: translate(-50%, -50%) rotate(0deg);
+	  }
+	  100% {
+	    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+	    transform: translate(-50%, -50%) rotate(360deg);
+	  }
+	}
+	@-webkit-keyframes lds-rolling {
+	  0% {
+	    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+	    transform: translate(-50%, -50%) rotate(0deg);
+	  }
+	  100% {
+	    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+	    transform: translate(-50%, -50%) rotate(360deg);
+	  }
+	}
+	.lds-rolling {
+	  position: relative;
+	}
+	.lds-rolling div,
+	.lds-rolling div:after {
+	  position: absolute;
+	  width: 146px;
+	  height: 146px;
+	  border: 6px solid #fff;
+	  border-top-color: transparent;
+	  border-radius: 50%;
+	}
+	.lds-rolling div {
+	  -webkit-animation: lds-rolling 1s linear infinite;
+	  animation: lds-rolling 1s linear infinite;
+	  top: 100px;
+	  left: 100px;
+	}
+	.lds-rolling div:after {
+	  -webkit-transform: rotate(90deg);
+	  transform: rotate(90deg);
+	}
+	.lds-rolling {
+	  width: 233px !important;
+	  height: 233px !important;
+	  -webkit-transform: translate(-116.5px, -116.5px) scale(1.165) translate(116.5px, 116.5px);
+	  transform: translate(-116.5px, -116.5px) scale(1.165) translate(116.5px, 116.5px);
+	}
+ //============================================================================ //

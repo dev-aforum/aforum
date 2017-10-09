@@ -1,0 +1,6 @@
+Altura: 1,76
+Manequim: 36 
+Busto: 80
+Cintura: 69
+Quadril: 93
+Sapato: 37
